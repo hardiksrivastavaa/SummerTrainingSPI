@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Training Activities</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for additional styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            overflow-x: hidden; /* Prevent horizontal scrollbar */
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        .content {
+            margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #fff;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #ffd700;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body>
+    <header class="py-8">
+        <div class="container">
+            <h1 class="text-4xl font-bold text-white">Summer Training Activities</h1>
+            <p class="text-lg text-white">45-day training at Softpro India, Lucknow</p>
+        </div>
+    </header>
+    <nav class="bg-gray-800 py-4">
+        <div class="container">
+            <a href="#web-development" class="mr-4 text-white">Web Development</a>
+            <a href="#java" class="mr-4 text-white">Java</a>
+            <a href="#tasks" class="mr-4 text-white">Tasks</a>
+        </div>
+    </nav>
+    <div class="container mt-8">
+        <section id="web-development" class="content">
+            <h2 class="text-2xl font-bold mb-4">Web Development</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Sample card for day's activity -->
+                <div class="card p-4">
+                    <h3 class="text-xl font-bold mb-2">Day 1</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod.</p>
+                    <a href="web_day1.html" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Details</a>
+                </div>
+                <!-- Add more cards for each day -->
+            </div>
+        </section>
+        <section id="java" class="content mt-8">
+            <h2 class="text-2xl font-bold mb-4">Java</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Sample card for day's activity -->
+                <div class="card p-4">
+                    <h3 class="text-xl font-bold mb-2">Day 1</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod.</p>
+                    <a href="java_day1.html" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Details</a>
+                </div>
+                <!-- Add more cards for each day -->
+            </div>
+        </section>
+        <section id="tasks" class="content mt-8">
+            <h2 class="text-2xl font-bold mb-4">Tasks</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Sample card for task -->
+                <div class="card p-4">
+                    <h3 class="text-xl font-bold mb-2">Task 1</h3>
+                    <p class="text-gray-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus euismod.</p>
+                    <a href="task1.html" class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">View Details</a>
+                </div>
+                <!-- Add more cards for each task -->
+            </div>
+        </section>
+        <div class="social-icons mt-8">
+            <!-- Replace with your social media links -->
+            <a href="#" class="text-gray-200 hover:text-yellow-400"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" class="text-gray-200 hover:text-yellow-400"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" class="text-gray-200 hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-gray-200 hover:text-yellow-400"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </div>
+
+    <!-- Optional: JavaScript for interactive elements -->
+    <script>
+        // Example: Toggle card transform on hover
+        const cards = document.querySelectorAll('.card');
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-15px)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>
