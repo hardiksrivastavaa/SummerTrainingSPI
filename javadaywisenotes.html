@@ -70,6 +70,14 @@
         }
         .panel p {
             margin: 0;
+            margin-bottom: 10px;
+        }
+        .panel ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        .panel ul li {
+            margin-bottom: 5px;
         }
         .card {
             background-color: #fff;
@@ -142,44 +150,62 @@
                     <p><strong>Current Status</strong></p>
                     <p>Java remains one of the most popular programming languages due to its robustness, security features, and extensive libraries and frameworks. It's widely used in various domains, including web development, enterprise applications, mobile development (Android), and cloud-based services.</p>
                     <p>Java's consistent updates and enhancements ensure it stays relevant in the ever-evolving tech landscape, making it a preferred choice for developers worldwide.</p>
-                </div>
 
-                <!-- Add more accordion sections as needed -->
+                    <p><strong>Java Key Features</strong></p>
+                    <ul>
+                        <li><strong>Object-Oriented:</strong> Java is based on the object-oriented programming (OOP) paradigm, which allows for the creation of modular programs and reusable code.</li>
+                        <li><strong>Platform-Independent:</strong> Java code is compiled into bytecode, which can run on any device with a Java Virtual Machine (JVM). This feature is often referred to as "write once, run anywhere" (WORA).</li>
+                        <li><strong>Simple:</strong> Java's syntax is easy to learn and closely resembles C++, but with fewer complex features, making it simpler to use.</li>
+                        <li><strong>Secure:</strong> Java provides a secure execution environment, with features like bytecode verification and a security manager, to protect against threats and vulnerabilities.</li>
+                        <li><strong>Robust:</strong> Java has strong memory management, exception handling, and type-checking mechanisms, reducing the likelihood of errors and crashes.</li>
+                        <li><strong>Multithreaded:</strong> Java supports multithreading, allowing concurrent execution of two or more threads for maximum CPU utilization.</li>
+                        <li><strong>High Performance:</strong> The Just-In-Time (JIT) compiler translates Java bytecode into native machine code at runtime, improving execution speed.</li>
+                        <li><strong>Distributed:</strong> Java supports the development of distributed applications with its extensive networking libraries.</li>
+                        <li><strong>Dynamic:</strong> Java is designed to adapt to an evolving environment, with capabilities to dynamically link new class libraries and methods.</li>
+                        <li><strong>Portable:</strong> Java programs can run on any platform without needing modifications, thanks to its platform-independent bytecode.</li>
+                        <li><strong>Rich Standard Library:</strong> Java comes with a vast standard library (Java Standard Edition, or SE) that provides many useful tools and APIs for tasks like data structures, networking, I/O, and more.</li>
+                        <li><strong>Garbage Collection:</strong> Java automatically manages memory through garbage collection, which helps in avoiding memory leaks and reducing programmer burden.</li>
+                    </ul>
+                </div>
             </section>
         </div>
     </main>
-    <!-- Footer with Icons -->
-    <footer class="footer mt-8">
-        <div class="text-center mt-4">
+    <footer class="footer">
+        <div class="text-center">
             &copy; 2024 Hardik Srivastava. All rights reserved.
         </div>
     </footer>
+
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var acc = document.getElementsByClassName("accordion");
-            var panels = document.getElementsByClassName("panel");
-            
-            for (var i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    // Close all panels
-                    for (var j = 0; j < panels.length; j++) {
-                        if (panels[j] !== this.nextElementSibling) {
-                            panels[j].style.display = "none";
-                            acc[j].classList.remove("active");
-                        }
-                    }
+        document.addEventListener("DOMContentLoaded", function() {
+            const accordions = document.querySelectorAll(".accordion");
+
+            accordions.forEach(acc => {
+                acc.addEventListener("click", function() {
+                    const panel = this.nextElementSibling;
+                    const icon = this.querySelector(".icon");
+
+                    // Toggle active class
+                    this.classList.toggle("active");
                     
+                    // Slide up all other panels
+                    document.querySelectorAll(".panel").forEach(p => {
+                        if (p !== panel) {
+                            p.style.display = "none";
+                            p.previousElementSibling.classList.remove("active");
+                        }
+                    });
+
                     // Toggle the clicked panel
-                    var panel = this.nextElementSibling;
                     if (panel.style.display === "block") {
                         panel.style.display = "none";
-                        this.classList.remove("active");
                     } else {
                         panel.style.display = "block";
-                        this.classList.add("active");
+                        icon.classList.toggle("fa-plus");
+                        icon.classList.toggle("fa-minus");
                     }
                 });
-            }
+            });
         });
     </script>
 </body>
