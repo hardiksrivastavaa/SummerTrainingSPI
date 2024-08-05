@@ -166,6 +166,55 @@
                         <li><strong>Rich Standard Library:</strong> Java comes with a vast standard library (Java Standard Edition, or SE) that provides many useful tools and APIs for tasks like data structures, networking, I/O, and more.</li>
                         <li><strong>Garbage Collection:</strong> Java automatically manages memory through garbage collection, which helps in avoiding memory leaks and reducing programmer burden.</li>
                     </ul>
+
+                    <p><strong>Java Program Execution</strong></p>
+                    <p>Java program execution involves several steps from writing the code to running the program. Here’s a simplified scenario:</p>
+
+                    <p><strong>1. Writing the Code</strong></p>
+                    <p>The programmer writes Java code in a file with a .java extension. For example, HelloWorld.java.</p>
+                    <pre><code>// HelloWorld.java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+</code></pre>
+
+                    <p><strong>2. Compiling the Code</strong></p>
+                    <p>The Java code is compiled using the Java compiler (javac). This translates the human-readable Java code into bytecode, which is stored in a file with a .class extension.</p>
+                    <pre><code>javac HelloWorld.java
+</code></pre>
+                    <p>After compilation, a HelloWorld.class file is generated.</p>
+
+                    <p><strong>3. Loading the Bytecode</strong></p>
+                    <p>The Java Virtual Machine (JVM) loads the .class file into memory. The JVM is platform-dependent, but it abstracts the execution environment from the developer, maintaining the platform independence of Java programs.</p>
+
+                    <p><strong>4. Bytecode Verification</strong></p>
+                    <p>Before execution, the JVM verifies the bytecode to ensure it is valid and does not violate Java’s security constraints.</p>
+
+                    <p><strong>5. Execution</strong></p>
+                    <p>The JVM executes the bytecode using its interpreter or Just-In-Time (JIT) compiler. The JIT compiler translates bytecode into native machine code on the fly for improved performance.</p>
+                    <pre><code>java HelloWorld
+</code></pre>
+                    <p>This command runs the HelloWorld class, and the main method is executed, printing "Hello, World!" to the console.</p>
+
+                    <p><strong>Steps Illustrated</strong></p>
+                    <ul>
+                        <li>Source Code: Write HelloWorld.java.</li>
+                        <li>Compilation: javac HelloWorld.java produces HelloWorld.class.</li>
+                        <li>Execution: java HelloWorld runs the program.</li>
+                    </ul>
+
+                    <p><strong>Key Components</strong></p>
+                    <ul>
+                        <li>Java Source File: Contains the Java code (e.g., HelloWorld.java).</li>
+                        <li>Java Compiler (`javac`): Converts Java code to bytecode.</li>
+                        <li>Bytecode: Intermediate code (e.g., HelloWorld.class) that runs on the JVM.</li>
+                        <li>Java Virtual Machine (JVM): Executes bytecode on any platform.</li>
+                    </ul>
+
+                    <p><strong>Summary</strong></p>
+                    <p>Java program execution involves writing the code, compiling it to bytecode, and running it on the JVM, which ensures platform independence and efficient execution.</p>
                 </div>
             </section>
         </div>
@@ -199,10 +248,12 @@
                     // Toggle the clicked panel
                     if (panel.style.display === "block") {
                         panel.style.display = "none";
+                        icon.classList.remove("fa-minus");
+                        icon.classList.add("fa-plus");
                     } else {
                         panel.style.display = "block";
-                        icon.classList.toggle("fa-plus");
-                        icon.classList.toggle("fa-minus");
+                        icon.classList.remove("fa-plus");
+                        icon.classList.add("fa-minus");
                     }
                 });
             });
