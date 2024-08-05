@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks - Java</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .nav a:hover {
+            background-color: #555;
+        }
+        .accordion {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background-color: #fff;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .accordion:hover {
+            background-color: #f1f1f1;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .accordion .icon {
+            transition: transform 0.3s ease;
+        }
+        .accordion.active .icon {
+            transform: rotate(45deg);
+        }
+        .panel {
+            padding: 15px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 0 0 8px 8px;
+        }
+        .panel p {
+            margin: 0;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="text-4xl mb-3 font-bold text-gray-900">Java Notes</h1>
+            <p class="text-lg text-gray-900">From Aug 3, 2024 to Sep 15, 2024</p>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="index.html">Back to Home</a>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="notes">
+                <div class="accordion">
+                    <span>Day 1</span>
+                    <i class="fas fa-plus icon"></i>
+                </div>
+                <div class="panel">
+                    <p>Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible. Here’s a brief history:</p>
+                    
+                    <p><strong>Early Development</strong></p>
+                    <p>1991: Java's journey began with the Green Project, an internal project at Sun Microsystems led by James Gosling, Mike Sheridan, and Patrick Naughton. The initial aim was to develop a language for digital devices such as set-top boxes and televisions. Gosling originally called the language "Oak" after an oak tree that stood outside his office. Later, it was renamed "Green" and finally "Java" after the Indonesian island renowned for its coffee.</p>
+
+                    <p><strong>Public Release</strong></p>
+                    <p>1995: Sun Microsystems officially released Java 1.0. It was designed with the concept of "write once, run anywhere" (WORA), meaning that compiled Java code could run on all platforms that supported Java without the need for recompilation. This cross-platform capability was achieved using the Java Virtual Machine (JVM).</p>
+
+                    <p><strong>Evolution and Growth</strong></p>
+                    <p>1996: Java Development Kit (JDK) 1.0 was released. The language gained rapid popularity, and Java-enabled web browsers like Netscape Navigator allowed Java applets to run within web pages.</p>
+                    <p>1998: JDK 1.2, known as Java 2, introduced significant improvements, including the Swing graphical API and the Collections Framework.</p>
+                    <p>2004: Java 5 (J2SE 5.0) was released, introducing important features like generics, metadata, enumerated types, and the enhanced for loop.</p>
+                    <p>2009: Oracle Corporation acquired Sun Microsystems, becoming the steward of Java.</p>
+
+                    <p><strong>Modern Java</strong></p>
+                    <p>2011: Java 7 introduced new features such as the try-with-resources statement and the Fork/Join framework.</p>
+                    <p>2014: Java 8 brought major changes, including lambda expressions, the Stream API, and the new Date and Time API, which significantly enhanced the language's functional programming capabilities.</p>
+                    <p>2017: Oracle started releasing new Java versions every six months, leading to more frequent updates and new features.</p>
+
+                    <p><strong>Recent Developments</strong></p>
+                    <p>Java 9: Introduced the module system (Project Jigsaw) to help with package management.</p>
+                    <p>Java 10 and beyond: Continued to add incremental improvements and new features, focusing on performance enhancements, new garbage collectors, and language improvements.</p>
+
+                    <p><strong>Current Status</strong></p>
+                    <p>Java remains one of the most popular programming languages due to its robustness, security features, and extensive libraries and frameworks. It's widely used in various domains, including web development, enterprise applications, mobile development (Android), and cloud-based services.</p>
+                    <p>Java's consistent updates and enhancements ensure it stays relevant in the ever-evolving tech landscape, making it a preferred choice for developers worldwide.</p>
+                </div>
+
+                <!-- Add more accordion sections as needed -->
+            </section>
+        </div>
+    </main>
+    <!-- Footer with Icons -->
+    <footer class="footer mt-8">
+        <div class="text-center mt-4">
+            &copy; 2024 Hardik Srivastava. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var acc = document.getElementsByClassName("accordion");
+            var panels = document.getElementsByClassName("panel");
+            
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    // Close all panels
+                    for (var j = 0; j < panels.length; j++) {
+                        if (panels[j] !== this.nextElementSibling) {
+                            panels[j].style.display = "none";
+                            acc[j].classList.remove("active");
+                        }
+                    }
+                    
+                    // Toggle the clicked panel
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                        this.classList.remove("active");
+                    } else {
+                        panel.style.display = "block";
+                        this.classList.add("active");
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
