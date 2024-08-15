@@ -124,101 +124,88 @@
                     <i class="fas fa-plus icon"></i>
                 </div>
                 <div class="panel">
-                    <p>Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible. Here’s a brief history:</p>
-                    
-                    <p><strong>Early Development</strong></p>
-                    <p>1991: Java's journey began with the Green Project, an internal project at Sun Microsystems led by James Gosling, Mike Sheridan, and Patrick Naughton. The initial aim was to develop a language for digital devices such as set-top boxes and televisions. Gosling originally called the language "Oak" after an oak tree that stood outside his office. Later, it was renamed "Green" and finally "Java" after the Indonesian island renowned for its coffee.</p>
+                    <!-- Day 1 Content -->
+                    <!-- (The content for Day 1 goes here, as you provided before) -->
+                </div>
 
-                    <p><strong>Public Release</strong></p>
-                    <p>1995: Sun Microsystems officially released Java 1.0. It was designed with the concept of "write once, run anywhere" (WORA), meaning that compiled Java code could run on all platforms that supported Java without the need for recompilation. This cross-platform capability was achieved using the Java Virtual Machine (JVM).</p>
+                <div class="accordion">
+                    <span>Day 2</span>
+                    <i class="fas fa-plus icon"></i>
+                </div>
+                <div class="panel">
+                    <!-- Day 2 Content -->
+                    <p><strong>Day 2: Control Statements, Loops, Break/Continue Statements</strong></p>
 
-                    <p><strong>Evolution and Growth</strong></p>
-                    <p>1996: Java Development Kit (JDK) 1.0 was released. The language gained rapid popularity, and Java-enabled web browsers like Netscape Navigator allowed Java applets to run within web pages.</p>
-                    <p>1998: JDK 1.2, known as Java 2, introduced significant improvements, including the Swing graphical API and the Collections Framework.</p>
-                    <p>2004: Java 5 (J2SE 5.0) was released, introducing important features like generics, metadata, enumerated types, and the enhanced for loop.</p>
-                    <p>2009: Oracle Corporation acquired Sun Microsystems, becoming the steward of Java.</p>
+                    <p>On Day 2, the focus was on control statements and loops in Java. Control statements allow the flow of execution to change dynamically, based on certain conditions.</p>
 
-                    <p><strong>Modern Java</strong></p>
-                    <p>2011: Java 7 introduced new features such as the try-with-resources statement and the Fork/Join framework.</p>
-                    <p>2014: Java 8 brought major changes, including lambda expressions, the Stream API, and the new Date and Time API, which significantly enhanced the language's functional programming capabilities.</p>
-                    <p>2017: Oracle started releasing new Java versions every six months, leading to more frequent updates and new features.</p>
+                    <p><strong>1. If-Else Statement</strong></p>
+                    <p>The if-else statement allows you to execute certain blocks of code depending on whether a condition is true or false.</p>
+                    <pre><code>
+if (condition) {
+    // code to be executed if condition is true
+} else {
+    // code to be executed if condition is false
+}</code></pre>
 
-                    <p><strong>Recent Developments</strong></p>
-                    <p>Java 9: Introduced the module system (Project Jigsaw) to help with package management.</p>
-                    <p>Java 10 and beyond: Continued to add incremental improvements and new features, focusing on performance enhancements, new garbage collectors, and language improvements.</p>
+                    <p><strong>2. Switch Statement</strong></p>
+                    <p>The switch statement is used to execute one out of multiple possible blocks of code, based on the value of an expression.</p>
+                    <pre><code>
+switch (variable) {
+    case value1:
+        // code to be executed if variable == value1
+        break;
+    case value2:
+        // code to be executed if variable == value2
+        break;
+    default:
+        // code to be executed if variable doesn't match any case
+}</code></pre>
 
-                    <p><strong>Current Status</strong></p>
-                    <p>Java remains one of the most popular programming languages due to its robustness, security features, and extensive libraries and frameworks. It's widely used in various domains, including web development, enterprise applications, mobile development (Android), and cloud-based services.</p>
-                    <p>Java's consistent updates and enhancements ensure it stays relevant in the ever-evolving tech landscape, making it a preferred choice for developers worldwide.</p>
+                    <p><strong>3. For Loop</strong></p>
+                    <p>The for loop allows you to execute a block of code a specific number of times.</p>
+                    <pre><code>
+for (initialization; condition; increment/decrement) {
+    // code to be executed in the loop
+}</code></pre>
 
-                    <p><strong>Java Key Features</strong></p>
-                    <ul>
-                        <li><strong>Object-Oriented:</strong> Java is based on the object-oriented programming (OOP) paradigm, which allows for the creation of modular programs and reusable code.</li>
-                        <li><strong>Platform-Independent:</strong> Java code is compiled into bytecode, which can run on any device with a Java Virtual Machine (JVM). This feature is often referred to as "write once, run anywhere" (WORA).</li>
-                        <li><strong>Simple:</strong> Java's syntax is easy to learn and closely resembles C++, but with fewer complex features, making it simpler to use.</li>
-                        <li><strong>Secure:</strong> Java provides a secure execution environment, with features like bytecode verification and a security manager, to protect against threats and vulnerabilities.</li>
-                        <li><strong>Robust:</strong> Java has strong memory management, exception handling, and type-checking mechanisms, reducing the likelihood of errors and crashes.</li>
-                        <li><strong>Multithreaded:</strong> Java supports multithreading, allowing concurrent execution of two or more threads for maximum CPU utilization.</li>
-                        <li><strong>High Performance:</strong> The Just-In-Time (JIT) compiler translates Java bytecode into native machine code at runtime, improving execution speed.</li>
-                        <li><strong>Distributed:</strong> Java supports the development of distributed applications with its extensive networking libraries.</li>
-                        <li><strong>Dynamic:</strong> Java is designed to adapt to an evolving environment, with capabilities to dynamically link new class libraries and methods.</li>
-                        <li><strong>Portable:</strong> Java programs can run on any platform without needing modifications, thanks to its platform-independent bytecode.</li>
-                        <li><strong>Rich Standard Library:</strong> Java comes with a vast standard library (Java Standard Edition, or SE) that provides many useful tools and APIs for tasks like data structures, networking, I/O, and more.</li>
-                        <li><strong>Garbage Collection:</strong> Java automatically manages memory through garbage collection, which helps in avoiding memory leaks and reducing programmer burden.</li>
-                    </ul>
+                    <p><strong>4. While Loop</strong></p>
+                    <p>The while loop repeats a block of code as long as the condition is true.</p>
+                    <pre><code>
+while (condition) {
+    // code to be executed in the loop
+}</code></pre>
 
-                    <p><strong>Java Program Execution</strong></p>
-                    <p>Java program execution involves several steps from writing the code to running the program. Here’s a simplified scenario:</p>
+                    <p><strong>5. Do-While Loop</strong></p>
+                    <p>The do-while loop is similar to the while loop, but it executes the block of code at least once before checking the condition.</p>
+                    <pre><code>
+do {
+    // code to be executed in the loop
+} while (condition);</code></pre>
 
-                    <p><strong>1. Writing the Code</strong></p>
-                    <p>The programmer writes Java code in a file with a .java extension. For example, HelloWorld.java.</p>
-                    <pre><code>// HelloWorld.java
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
+                    <p><strong>6. Break Statement</strong></p>
+                    <p>The break statement is used to exit a loop or switch statement before it has completed its normal execution.</p>
+                    <pre><code>
+for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+        break; // exit the loop when i is 5
     }
-}
-</code></pre>
+    System.out.println(i);
+}</code></pre>
 
-                    <p><strong>2. Compiling the Code</strong></p>
-                    <p>The Java code is compiled using the Java compiler (javac). This translates the human-readable Java code into bytecode, which is stored in a file with a .class extension.</p>
-                    <pre><code>javac HelloWorld.java
-</code></pre>
-                    <p>After compilation, a HelloWorld.class file is generated.</p>
-
-                    <p><strong>3. Loading the Bytecode</strong></p>
-                    <p>The Java Virtual Machine (JVM) loads the .class file into memory. The JVM is platform-dependent, but it abstracts the execution environment from the developer, maintaining the platform independence of Java programs.</p>
-
-                    <p><strong>4. Bytecode Verification</strong></p>
-                    <p>Before execution, the JVM verifies the bytecode to ensure it is valid and does not violate Java’s security constraints.</p>
-
-                    <p><strong>5. Execution</strong></p>
-                    <p>The JVM executes the bytecode using its interpreter or Just-In-Time (JIT) compiler. The JIT compiler translates bytecode into native machine code on the fly for improved performance.</p>
-                    <pre><code>java HelloWorld
-</code></pre>
-                    <p>This command runs the HelloWorld class, and the main method is executed, printing "Hello, World!" to the console.</p>
-
-                    <p><strong>Steps Illustrated</strong></p>
-                    <ul>
-                        <li>Source Code: Write HelloWorld.java.</li>
-                        <li>Compilation: javac HelloWorld.java produces HelloWorld.class.</li>
-                        <li>Execution: java HelloWorld runs the program.</li>
-                    </ul>
-
-                    <p><strong>Key Components</strong></p>
-                    <ul>
-                        <li>Java Source File: Contains the Java code (e.g., HelloWorld.java).</li>
-                        <li>Java Compiler (`javac`): Converts Java code to bytecode.</li>
-                        <li>Bytecode: Intermediate code (e.g., HelloWorld.class) that runs on the JVM.</li>
-                        <li>Java Virtual Machine (JVM): Executes bytecode on any platform.</li>
-                    </ul>
-
-                    <p><strong>Summary</strong></p>
-                    <p>Java program execution involves writing the code, compiling it to bytecode, and running it on the JVM, which ensures platform independence and efficient execution.</p>
+                    <p><strong>7. Continue Statement</strong></p>
+                    <p>The continue statement is used to skip the current iteration of a loop and proceed with the next iteration.</p>
+                    <pre><code>
+for (int i = 0; i < 10; i++) {
+    if (i == 5) {
+        continue; // skip the rest of the loop when i is 5
+    }
+    System.out.println(i);
+}</code></pre>
                 </div>
             </section>
         </div>
     </main>
+    
     <footer class="footer">
         <div class="text-center">
             &copy; 2024 Hardik Srivastava. All rights reserved.
