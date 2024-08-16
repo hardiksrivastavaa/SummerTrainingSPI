@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>T7 - Div T3</title>
+    <title>T8 - Div T4</title>
 
     <style>
         h1 {
@@ -17,153 +17,272 @@
         }
 
         #row1 {
-            height: 150px;
+            height: 500px;
             width: 1000px;
         }
 
         #r1_col1 {
             float: left;
-            height: 150px;
-            width: 150px;
-            background-color: #015B7E;
+            height: 500px;
+            width: 500px;
+            background-color: lightgreen;
         }
 
         #r1_col2 {
-            float: left;
-            height: 150px;
-            width: 350px;
-            background-color: #0077A2;
-        }
-
-        #r1_col3 {
-            float: left;
-            height: 150px;
-            width: 350px;
-            background-color: #6DCFF6;
-        }
-
-        #r1_col4 {
-            float: left;
-            height: 150px;
-            width: 150px;
-            background-color: #015B7E;
+            float: right;
+            height: 500px;
+            width: 500px;
+            background-color: green;
         }
 
         #row2 {
-            height: 350px;
+            height: 500px;
             width: 1000px;
         }
 
         #r2_col1 {
             float: left;
-            height: 350px;
-            width: 150px;
-            background-color: #6DCFF6;
+            height: 500px;
+            width: 500px;
+            background-color: lightgreen;
+        }
+
+        #r2_col1_r1 {
+            float: left;
+            height: 250px;
+            width: 500px;
+        }
+
+        #r2_col1_r1_col1 {
+            float: left;
+            height: 250px;
+            width: 250px;
+            background-color: darkblue;
+        }
+
+        #r2_col1_r1_col2 {
+            float: right;
+            height: 250px;
+            width: 250px;
+            background-color: green;
+        }
+
+        #r2_col1_r2 {
+            height: 250px;
+            width: 500px;
+        }
+
+        #r2_col1_r2_r1_col1 {
+            float: left;
+            height: 125px;
+            width: 250px;
+        }
+
+        #r2_col1_r2_r1_col1_r1 {
+            height: 62.5px;
+            width: 250px;
+            background-color: brown;
+        }
+
+        #r2_col1_r2_r1_col1_r2 {
+            height: 62.5px;
+            width: 250px;
+            background-color: rgb(83, 32, 32);
+        }
+
+        #r2_col1_r2_r1_col2 {
+            float: right;
+            height: 125px;
+            width: 250px;
+
+        }
+
+        #r2_col1_r2_r1_col2_col1 {
+            float: left;
+            height: 125px;
+            width: 125px;
+            background-color: darkblue;
+        }
+
+        #r2_col1_r2_r1_col2_col2 {
+            float: right;
+            height: 125px;
+            width: 125px;
+            background-color: rgb(177, 228, 177);
+        }
+
+        #r2_col1_r2_r2 {
+            height: 125px;
+            width: 500px;
+        }
+
+        #r2_col1_r2_r2_col1 {
+            height: 125px;
+            width: 125px;
+            float: left;
+        }
+
+        #r2_col1_r2_r2_col1_r1 {
+            float: left;
+            height: 62.5px;
+            width: 250px;
+            background-color: antiquewhite;
+
+        }
+
+        #r2_col1_r2_r2_col1_r2 {
+            height: 62.5px;
+            width: 250px;
+        }
+
+        #r2_col1_r2_r2_col1_r2_col1 {
+            height: 62.5px;
+            float: left;
+            width: 83.4px;
+            background-color: black;
+        }
+
+        #r2_col1_r2_r2_col1_r2_col2 {
+            height: 62.5px;
+            float: left;
+            width: 83.2px;
+            background-color: gray;
+        }
+
+        #r2_col1_r2_r2_col1_r2_col3 {
+            height: 62.5px;
+            float: left;
+            width: 83.4px;
+            background-color: black;
+        }
+
+        #r2_col1_r2_r2_col2 {
+            height: 62.5px;
+            width: 250px;
+            float: right;
+        }
+
+        #r2_col1_r2_r2_col2_col1 {
+            height: 125px;
+            width: 125px;
+            float: left;
+            background-color: rgb(11, 245, 11);
+        }
+
+        #r2_col1_r2_r2_col2_col2 {
+            height: 125px;
+            width: 125px;
+            float: right;
+        }
+
+        #r2_col1_r2_r2_col2_col2_r1 {
+            height: 62.5px;
+            width: 125px;
+
+        }
+
+        #r2_col1_r2_r2_col2_col2_r1_col1 {
+            height: 62.5px;
+            width: 62.5px;
+            float: left;
+            background-color: yellow;
+        }
+
+        #r2_col1_r2_r2_col2_col2_r1_col2 {
+            height: 62.5px;
+            width: 62.5px;
+            float: right;
+            background-color: black;
+        }
+
+        #r2_col1_r2_r2_col2_col2_r2 {
+            height: 62.5px;
+            width: 125px;
+        }
+
+        #r2_col1_r2_r2_col2_col2_r2_col1 {
+            height: 62.5px;
+            width: 62.5px;
+            float: left;
+            background-color: black;
+        }
+
+        #r2_col1_r2_r2_col2_col2_r2_col2 {
+            height: 62.5px;
+            width: 62.5px;
+            float: right;
+            background-color: yellow;
         }
 
         #r2_col2 {
-            float: left;
-            height: 350px;
-            width: 700px;
-            background-color: lightgray;
+            height: 500px;
+            width: 500px;
+            background-color: lightgreen;
+            float: right;
         }
-
-        #r2_col3 {
-            float: left;
-            height: 350px;
-            width: 150px;
-            background-color: #6DCFF6;
-        }
-
-        #row3 {
-            height: 350px;
-            width: 1000px;
-        }
-
-        #r3_col1 {
-            float: left;
-            height: 350px;
-            width: 150px;
-            background-color: #0077A2;
-        }
-
-        #r3_col2 {
-            float: left;
-            height: 350px;
-            width: 700px;
-            background-color: lightgray;
-        }
-
-        #r3_col3 {
-            float: left;
-            height: 350px;
-            width: 150px;
-            background-color: #0077A2;
-        }
-
-        #row4 {
-            height: 150px;
-            width: 1000px;
-        }
-
-        #r4_col1 {
-            float: left;
-            height: 150px;
-            width: 150px;
-            background-color: #015B7E;
-        }
-
-        #r4_col2 {
-            float: left;
-            height: 150px;
-            width: 350px;
-            background-color: #0077A2;
-        }
-
-        #r4_col3 {
-            float: left;
-            height: 150px;
-            width: 350px;
-            background-color: #6DCFF6;
-        }
-
-        #r4_col4 {
-            float: left;
-            height: 150px;
-            width: 150px;
-            background-color: #015B7E;
-        }
-    </style>
+ </style>
 </head>
 
 <body>
 
-    <h1>Task - 7 | Div Task - 3</h1>
+    <h1>Task - 8 | Div Task - 4</h1>
 
     <div id="outer">
 
         <div id="row1">
             <div id="r1_col1"></div>
             <div id="r1_col2"></div>
-            <div id="r1_col3"></div>
-            <div id="r1_col4"></div>
         </div>
+
         <div id="row2">
-            <div id="r2_col1"></div>
+            <div id="r2_col1">
+                <div id="r2_col1_r1">
+                    <div id="r2_col1_r1_col1"></div>
+                    <div id="r2_col1_r1_col2"></div>
+                </div>
+
+                <div id="r2_col1_r2">
+                    <div id="r2_col1_r2_r1">
+                        <div id="r2_col1_r2_r1_col1">
+                            <div id="r2_col1_r2_r1_col1_r1"></div>
+                            <div id="r2_col1_r2_r1_col1_r2"></div>
+                        </div>
+                        <div id="r2_col1_r2_r1_col2">
+                            <div id="r2_col1_r2_r1_col2_col1"></div>
+                            <div id="r2_col1_r2_r1_col2_col2"></div>
+                        </div>
+                    </div>
+
+                    <div id="r2_col1_r2_r2">
+                        <div id="r2_col1_r2_r2_col1">
+                            <div id="r2_col1_r2_r2_col1_r1"></div>
+                            <div id="r2_col1_r2_r2_col1_r2">
+                                <div id="r2_col1_r2_r2_col1_r2_col1"></div>
+                                <div id="r2_col1_r2_r2_col1_r2_col2"></div>
+                                <div id="r2_col1_r2_r2_col1_r2_col3"></div>
+                            </div>
+                        </div>
+                        <div id="r2_col1_r2_r2_col2">
+                            <div id="r2_col1_r2_r2_col2_col1"></div>
+                            <div id="r2_col1_r2_r2_col2_col2">
+                                <div id="r2_col1_r2_r2_col2_col2_r1">
+                                    <div id="r2_col1_r2_r2_col2_col2_r1_col1"></div>
+                                    <div id="r2_col1_r2_r2_col2_col2_r1_col2"></div>
+                                </div>
+                                <div id="r2_col1_r2_r2_col2_col2_r2">
+                                    <div id="r2_col1_r2_r2_col2_col2_r2_col1"></div>
+                                    <div id="r2_col1_r2_r2_col2_col2_r2_col2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
             <div id="r2_col2"></div>
-            <div id="r2_col3"></div>
         </div>
-        <div id="row3">
-            <div id="r3_col1"></div>
-            <div id="r3_col2"></div>
-            <div id="r3_col3"></div>
-        </div>
-        <div id="row4">
-            <div id="r4_col1"></div>
-            <div id="r4_col2"></div>
-            <div id="r4_col3"></div>
-            <div id="r4_col4"></div>
-        </div>
+
     </div>
 
 </body>
