@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            background-color: #e8f5e9;
+            padding: 0;
+        }
+
+        div {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        p {
+            font-size: 18px;
+            color: #388e3c;
+            font-weight: bold;
+        }
+
+        code {
+            display: block;
+            background-color: #f1f8e9;
+            padding: 15px;
+            border-left: 6px solid #7cb342;
+            color: #2e7d32;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .output {
+            background-color: #f1f8e9;
+            padding: 10px;
+            border-left: 6px solid #7cb342;
+            color: #2e7d32;
+            margin-top: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background-color: #2c6b2f;
+        }
+
+        .copy-btn i {
+            margin-right: 6px;
+        }
+
+        @media (max-width: 600px) {
+            div {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            code {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .output {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .copy-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .copy-btn i {
+                margin-right: 4px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to print the table of a given number.</p>
+        <code id="code-block">
+import java.util.*;
+
+class T10 {
+    public static void main(String[] args) {
+
+        int n;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number to get the table of that number: ");
+        n = sc.nextInt();
+
+        System.out.println("Table of " + n + " is here: ");
+        for (int i = 1; i <= 10; i++) {
+            int t = n * i;
+            System.out.println(n + " * " + i + " = " + t);
+        }
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Input:<br>
+            Number: 7<br><br>
+            Output:<br>
+            Table of 7 is here:<br>
+            7 * 1 = 7<br>
+            7 * 2 = 14<br>
+            7 * 3 = 21<br>
+            7 * 4 = 28<br>
+            7 * 5 = 35<br>
+            7 * 6 = 42<br>
+            7 * 7 = 49<br>
+            7 * 8 = 56<br>
+            7 * 9 = 63<br>
+            7 * 10 = 70
+        </div>
+    </div>
+
+    <script>
+        function copyCode() {
+            const codeBlock = document.getElementById('code-block');
+            const codeText = codeBlock.innerText;
+            navigator.clipboard.writeText(codeText).then(() => {
+                alert("Code copied to clipboard!");
+            }).catch(err => {
+                alert("Failed to copy code: " + err);
+            });
+        }
+    </script>
+
+</body>
+
+</html>
