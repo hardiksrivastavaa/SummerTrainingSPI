@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Task - 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 10px;
             background-color: #e0f7fa;
+            padding: 0;
         }
 
         div {
             background-color: #ffffff;
-            padding: 20px;
+            padding: 15px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            max-width: 100%;
         }
 
         p {
-            font-size: 20px;
+            font-size: 18px;
             color: #00796b;
             font-weight: bold;
         }
@@ -33,7 +37,8 @@
             color: #2e7d32;
             font-family: 'Courier New', Courier, monospace;
             white-space: pre-wrap;
-            margin-top: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
             border-radius: 4px;
             overflow-x: auto;
         }
@@ -43,8 +48,62 @@
             padding: 10px;
             border-left: 6px solid #0288d1;
             color: #455a64;
-            margin-top: 20px;
+            margin-top: 10px;
             border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        .copy-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #388e3c;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            background-color: #2e7d32;
+        }
+
+        .copy-btn i {
+            margin-right: 6px;
+        }
+
+        @media (max-width: 600px) {
+            div {
+                padding: 10px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            code {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .output {
+                padding: 8px;
+                font-size: 14px;
+            }
+
+            .copy-btn {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .copy-btn i {
+                margin-right: 4px;
+            }
         }
     </style>
 </head>
@@ -53,7 +112,7 @@
 
     <div>
         <p>WAP to find the area and perimeter of a Rectangle.</p>
-        <code>
+        <code id="code-block">
 import java.util.*;
 
 class T1 {
@@ -75,6 +134,7 @@ class T1 {
     }
 }
         </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
         <div class="output">
             <strong>Expected Output:</strong><br>
             Enter the length of the rectangle: 5<br>
@@ -83,6 +143,18 @@ class T1 {
             Perimeter of the rectangle: 16
         </div>
     </div>
+
+    <script>
+        function copyCode() {
+            const codeBlock = document.getElementById('code-block');
+            const codeText = codeBlock.innerText;
+            navigator.clipboard.writeText(codeText).then(() => {
+                alert("Code copied to clipboard!");
+            }).catch(err => {
+                alert("Failed to copy code: " + err);
+            });
+        }
+    </script>
 
 </body>
 
