@@ -84,34 +84,6 @@
 
         <hr>
 
-        <h2>How to Take Input from User in Java?</h2>
-        <p>The <code>Scanner</code> class from the <code>java.util</code> package is used to take input from the user.
-            Here's how:</p>
-
-        <p>Scanner is a class available in java.util pacakage. If you want to take input from user you can use Scanner
-            class object.</p>
-
-        <div class="code">
-            <p>Syntax : ClassName OjectName = new ClassName();</p>
-            <p>import java.util.Scanner;</p>
-
-            <p>Scanner s = new Scanner(System.in);</p>
-
-            <p>For int input:</p>
-            <p>int a = s.nextInt();</p>
-
-            <p>For float input:</p>
-            <p>float b = s.nextFloat();</p>
-
-            <p>For double input:</p>
-            <p>double c = s.nextDouble();</p>
-
-            <p>For string input:</p>
-            <p>String name = s.nextLine();</p>
-            <p>String name = s.next();</p>
-
-        </div>
-
         <div class="date">
             <p>14 August, 2024</p>
         </div>
@@ -125,651 +97,76 @@
             <li>What is a string in Java? Explain.</li>
         </ol>
 
-        <h2>What is a Class? Explain with an example.</h2>
-        <>A class in Java is a blueprint or template for creating objects. It defines properties (variables) and
-            behaviors (methods) that the objects created from the class will have. Think of a class as a recipe, and
-            objects as the dishes you make from that recipe.
-            <div class="code">
-                Example:
-                class Car { <br>
-                String color; <br>
-                String model; <br>
+        <div class="date">
+            <p>15 August, 2024</p>
+        </div>
 
-                void drive() { <br>
-                System.out.println("The car is driving."); <br>
-                }
-                }
-            </div>
-            </p>
+        <h2>Tasks</h2>
+        <ol>
+            <li>What is Java? Write difference between C, C++ and Java.</li>
+            <li>Why Java is Platform Independent?</li>
+            <li>Describe JDK, JRE and JVM.</li>
+            <li>What is Package in java?</li>
+            <li>What is class and object?</li>
+            <li>Describe public static void main().</li>
+            <li>What is differnce between next() and nextLine() method?</li>
+            <li>What is differnce between print() and println() method?</li>
+            <li>WAP to find area and perimeter of Rectangle.</li>
+            <li>WAP to take number of days as input and compute years. weeks and days.</li>
+            <li>Input : 375 <br> Output : 1 year 1 week 3 days <br> avoid leap year.</li>
+        </ol>
 
-            <h2>What is OOPs? Write its pillars.</h2>
-            <p>OOPs (Object-Oriented Programming) is a programming paradigm that organizes software design around
-                objects,
-                rather than functions or logic. The four main pillars of OOPs are: <br> <br>
-                <strong>Encapsulation :</strong> Bundling the data (variables) and methods (functions) that operate on
-                the
-                data into a single unit or class. It also restricts access to certain components. <br>
-                <strong>Inheritance :</strong> Creating a new class from an existing class, inheriting its properties
-                and
-                behaviors, and possibly adding new ones. <br>
-                <strong>Polymorphism :</strong> Allowing objects to be treated as instances of their parent class while
-                also
-                being able to behave differently based on their specific class type. <br>
-                <strong>Abstraction :</strong> Hiding complex implementation details and showing only the essential
-                features
-                to the user.
-            </p>
 
-            <h2>What is a package in Java? Explain with an example.</h2>
-            <p>A package in Java is a way to organize related classes and interfaces into a group. It helps in avoiding
-                name
-                conflicts and makes it easier to manage large software projects.
-            <div class="code">
-                <pre> Example:
-            package com.example.myapp;
-            
-            public class MyClass {
-                // Class code here
-            }</pre>
-            </div>
-            </p>
+        <div class="date">
+            <p>16 August, 2024</p>
+        </div>
 
-            <h2>What is Decision Control? Describe each decision control.</h2>
-            <p>Decision Control in Java refers to making decisions in your code using certain conditions. It is done
-                using
-                the following structures: <br><br>
-                <strong>if statement :</strong> Executes a block of code if a specified condition is true. <br>
-                <strong>if-else statement :</strong> Executes one block of code if a condition is true, and another
-                block if
-                it is false. <br>
-                <strong>else-if ladder :</strong> Checks multiple conditions in sequence. <br>
-                <strong>switch statement :</strong> Selects one of many code blocks to be executed based on the value of
-                an
-                expression.
-            </p>
-
-            <h2>What is a string in Java? Explain.</h2>
-            <p>A String in Java is a sequence of characters, often used to represent text. Strings are objects in Java,
-                which means they come with built-in methods to perform operations like concatenation, comparison, and
-                length
-                calculation.
+        <h2>Operators</h2>
+        <p>Operators are symbols which are used to perform operation on operands.</p>
+        <ul>
+            <li><strong>Arithmetic Operators : </strong>
+                Addtion (+) | Substraction (-) | Multiplication (*) | Division (/) | Modulo[Remainer Collector] (%)
+            </li> <br>
+            <li><strong>Relational Operators : </strong> These operators specifies relation b/w two entities.
+                <br><br>
+                Greater Than (>) | Less Than (<) | Greater Than or Equal to (>=) | Less Than or Equal to (<=)
+                        |==equality [a==b] | Not equal to (!=) </li>
+                        <br>
+            <li><strong>Assignment Operator : </strong> a=b //Copies value of b to a</li>
+            <br>
+            <li><strong>Increment Operator : </strong> Increment Operator increase value of a variable by 1. <br>
+                a++ //a=a+1;</li>
+            <br>
+            <li><strong>Decrement Operator : </strong> Decrement Operator increase value of a variable by 1. <br>
+                a-- //a=a-1;</li><br>
+            <li><strong>Logical Operators : </strong> Logical Operators are used to combine two or more conditions.
+                <br><br>
+                AND (&&) | OR (||) | NOT (!)
+            </li>
+        </ul>
+        <br>
+        <h2>Decision Controls</h2>
+        <p>Decision Controls are used for decision making.If you want to execute code
+            based on some condition then you can use decision control. In java there are following types of decision
+            control : </p>
+        <ol>
+            <li><strong>if Statement : </strong>if is a keyword which works as decision control. We attach a
+                condition with if statement. If given condtiion is true then code will be executed and if given
+                condition is false then code will not be executed.</li>
             <div class="code">
                 <pre>
-            Example:
-            String greeting = "Hello, World!";
-            System.out.println(greeting);
-        </pre>
-            </div>
-            </p>
-
-            <div class="date">
-                <p>15 August, 2024</p>
-            </div>
-
-            <h2>Tasks</h2>
-            <ol>
-                <li>What is Java? Write difference between C, C++ and Java.</li>
-                <li>Why Java is Platform Independent?</li>
-                <li>Describe JDK, JRE and JVM.</li>
-                <li>What is Package in java?</li>
-                <li>What is class and object?</li>
-                <li>Describe public static void main().</li>
-                <li>What is differnce between next() and nextLine() method?</li>
-                <li>What is differnce between print() and println() method?</li>
-                <li>WAP to find area and perimeter of Rectangle.</li>
-                <li>WAP to take number of days as input and compute years. weeks and days.</li>
-                <li>Input : 375 <br> Output : 1 year 1 week 3 days <br> avoid leap year.</li>
-            </ol>
-
-            <h2>What is Java? Write difference between C, C++ and Java.</h2>
-            <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few
-                implementation dependencies as possible. It was developed by Sun Microsystems (now owned by Oracle
-                Corporation) and released in 1995. Java enables developers to write code that can run on any platform
-                that supports Java without the need for recompilation, thanks to its "write once, run anywhere" (WORA)
-                capability. Java applications are compiled to bytecode that can run on any Java Virtual Machine (JVM)
-                regardless of the underlying computer architecture.</p>
-
-            <h2>Differences Between C, C++, and Java</h2>
-
-            <table border="1" cellpadding="10">
-                <tr>
-                    <th>Feature</th>
-                    <th>C</th>
-                    <th>C++</th>
-                    <th>Java</th>
-                </tr>
-                <tr>
-                    <td>Language Type</td>
-                    <td>Procedural</td>
-                    <td>Procedural and Object-Oriented</td>
-                    <td>Pure Object-Oriented (with some procedural aspects)</td>
-                </tr>
-                <tr>
-                    <td>Platform Dependency</td>
-                    <td>Platform-dependent (compiled code runs on the same OS it was compiled on)</td>
-                    <td>Platform-dependent</td>
-                    <td>Platform-independent (compiled to bytecode that runs on JVM)</td>
-                </tr>
-                <tr>
-                    <td>Memory Management</td>
-                    <td>Manual (using <code>malloc</code> and <code>free</code>)</td>
-                    <td>Manual (using <code>new</code> and <code>delete</code>)</td>
-                    <td>Automatic (using Garbage Collection)</td>
-                </tr>
-                <tr>
-                    <td>Syntax</td>
-                    <td>Simple, with no support for object-oriented programming</td>
-                    <td>Supports both procedural and object-oriented programming</td>
-                    <td>Fully object-oriented, with a focus on ease of development</td>
-                </tr>
-                <tr>
-                    <td>Multiple Inheritance</td>
-                    <td>Not supported</td>
-                    <td>Supported through classes</td>
-                    <td>Not supported directly (can use interfaces to achieve similar results)</td>
-                </tr>
-                <tr>
-                    <td>Pointers</td>
-                    <td>Supported, direct memory manipulation</td>
-                    <td>Supported, with more safety features than C</td>
-                    <td>Not supported (pointers are abstracted away for security and simplicity)</td>
-                </tr>
-                <tr>
-                    <td>Operator Overloading</td>
-                    <td>Not supported</td>
-                    <td>Supported</td>
-                    <td>Not supported</td>
-                </tr>
-                <tr>
-                    <td>Libraries and APIs</td>
-                    <td>Standard C library</td>
-                    <td>Standard Template Library (STL) and various libraries</td>
-                    <td>Rich set of APIs and libraries provided by Java Development Kit (JDK)</td>
-                </tr>
-                <tr>
-                    <td>Performance</td>
-                    <td>Generally faster because of lower-level operations</td>
-                    <td>Faster than Java but slower than C due to object-oriented features</td>
-                    <td>Slower than C/C++ due to JVM overhead, but JIT (Just-In-Time) compiler improves performance</td>
-                </tr>
-                <tr>
-                    <td>Use Cases</td>
-                    <td>System programming, embedded systems, low-level programming</td>
-                    <td>System/software development, game development, real-time processing</td>
-                    <td>Web development, enterprise applications, mobile applications, networked applications</td>
-                </tr>
-                <tr>
-                    <td>Syntax Complexity</td>
-                    <td>Lower-level syntax, more control over hardware</td>
-                    <td>Medium complexity with object-oriented features</td>
-                    <td>Higher-level syntax, easier to learn for beginners, less control over hardware</td>
-                </tr>
-            </table>
-
-            <p><strong>Summary:</strong></p>
-            <p><strong>C</strong> is a procedural language suited for system-level programming and embedded systems.</p>
-            <p><strong>C++</strong> adds object-oriented features to C, allowing for both procedural and object-oriented
-                programming.</p>
-            <p><strong>Java</strong> is a pure object-oriented language designed for portability, ease of use, and
-                robust memory management, making it ideal for a wide range of applications, especially in web and
-                enterprise environments.</p>
-
-            <h2>Why is Java Platform Independent?</h2>
-
-            <p>Java is platform-independent because of how it compiles and runs code. Here’s a simple explanation:</p>
-
-            <ul>
-                <li>
-                    <strong>Compilation to Bytecode:</strong>
-                    <p>Java code is first compiled into an intermediate form called bytecode, which is the same for all
-                        platforms.</p>
-                </li>
-                <li>
-                    <strong>Java Virtual Machine (JVM):</strong>
-                    <p>The bytecode runs on the JVM, which is different for each platform (Windows, Linux, etc.). The
-                        JVM translates the bytecode into machine code specific to that platform.</p>
-                </li>
-                <li>
-                    <strong>Write Once, Run Anywhere:</strong>
-                    <p>Because the bytecode can run on any JVM, Java programs can run on any device or operating system
-                        that has a JVM, without needing to be rewritten or recompiled.</p>
-                </li>
-            </ul>
-
-            <p>This is why Java is considered platform-independent.</p>
-
-            <h2>Describe JDK, JVM and JRE.</h2>
-            <h2>JDK (Java Development Kit)</h2>
-            <p>The <strong>JDK</strong> is a software package used by developers to build Java applications. It
-                includes:</p>
-            <ul>
-                <li><strong>Compiler:</strong> Converts Java code into bytecode.</li>
-                <li><strong>JRE:</strong> Provides the environment to run Java programs.</li>
-                <li><strong>Tools:</strong> Includes tools like debuggers and profilers for development.</li>
-            </ul>
-
-            <h2>JRE (Java Runtime Environment)</h2>
-            <p>The <strong>JRE</strong> is the software that provides the necessary environment to run Java programs. It
-                includes:</p>
-            <ul>
-                <li><strong>JVM:</strong> Executes the Java bytecode.</li>
-                <li><strong>Core Libraries:</strong> Provides the essential classes and resources for Java applications.
-                </li>
-            </ul>
-
-            <h2>JVM (Java Virtual Machine)</h2>
-            <p>The <strong>JVM</strong> is the part of the JRE that actually runs Java programs. It:</p>
-            <ul>
-                <li><strong>Executes Bytecode:</strong> Converts bytecode into machine code specific to the operating
-                    system.</li>
-                <li><strong>Manages Memory:</strong> Handles tasks like garbage collection.</li>
-                <li><strong>Ensures Platform Independence:</strong> Allows Java programs to run on any platform with a
-                    JVM.</li>
-            </ul>
-
-            <h2>What is a Package in Java?</h2>
-
-            <p>A <strong>package</strong> in Java is a way to group related classes and interfaces together. It helps in
-                organizing code and managing access.</p>
-
-            <ul>
-                <li><strong>Organization:</strong> Groups related classes and interfaces.</li>
-                <li><strong>Access Control:</strong> Controls access to classes and their members.</li>
-                <li><strong>Importing:</strong> Use the <code>import</code> statement to use classes from other
-                    packages.</li>
-            </ul>
-
-            <h2>Example:</h2>
-
-            <p>Here’s a simple example:</p>
-            <div class="code">
-                <pre>
-
-// Define a package
-package com.example;
-
-// Class in the package
-public class MyClass {
-    public static void main(String[] args) {
-        System.out.println("Hello from MyClass!");
-    }
-}
-
-</pre>
-            </div>
-
-            <p>Packages help keep your code organized and prevent name conflicts.</p>
-
-            <h2>What is a Class?</h2>
-
-            <p>A <strong>class</strong> in Java is a blueprint for creating objects. It defines the properties and
-                behaviors that objects created from the class will have.</p>
-
-            <ul>
-                <li><strong>Definition:</strong> Defined using the <code>class</code> keyword.</li>
-                <li><strong>Components:</strong> Includes fields (variables) and methods (functions).</li>
-                <li><strong>Example:</strong>
-                    <div class="code">
-                        <pre>
-public class Car {
-    // Fields
-    String color;
-    String model;
-    
-    // Method
-    void drive() {
-        System.out.println("The car is driving.");
-    }
-}
-    </pre>
-                    </div>
-                </li>
-            </ul>
-
-            <h2>What is an Object?</h2>
-
-            <p>An <strong>object</strong> is an instance of a class. It is a concrete realization of the class, with
-                actual values for its fields and the ability to perform its methods.</p>
-
-            <ul>
-                <li><strong>Creation:</strong> Created using the <code>new</code> keyword.</li>
-                <li><strong>State and Behavior:</strong> Each object has its own state (values of fields) and can
-                    perform behaviors defined by its class.</li>
-                <li><strong>Example:</strong>
-                    <div class="code">
-                        <pre>
-public class Main {
-    public static void main(String[] args) {
-        // Creating an object of the Car class
-        Car myCar = new Car();
-        
-        // Setting fields
-        myCar.color = "Red";
-        myCar.model = "Toyota";
-        
-        // Calling a method
-        myCar.drive();
-    }
-}
-    </pre>
-                    </div>
-                </li>
-            </ul>
-
-            <p>In summary, a class is a blueprint, and an object is an instance of that blueprint.</p>
-
-            <h2>What is `public static void main(String[] args)`?</h2>
-
-            <p>The <code>main</code> method is the entry point of a Java application. It is where the Java runtime
-                starts executing the program.</p>
-
-            <ul>
-                <li><strong>public:</strong> The method is accessible from anywhere, allowing the Java runtime to call
-                    it.</li>
-                <li><strong>static:</strong> The method belongs to the class itself, not to instances of the class. This
-                    means it can be called without creating an instance of the class.</li>
-                <li><strong>void:</strong> The method does not return any value.</li>
-                <li><strong>main:</strong> The special name of the method that the Java runtime looks for as the entry
-                    point.</li>
-                <li><strong>String[] args:</strong> An array of strings that can hold command-line arguments passed to
-                    the program.</li>
-            </ul>
-
-            <h2>Example</h2>
-
-            <p>Here’s a simple example:</p>
-
-            <div class="code">
-                <pre>
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-</pre>
-            </div>
-
-            <p>In this example:</p>
-
-            <ul>
-                <li>The <code>main</code> method prints "Hello, World!" to the console.</li>
-                <li>It serves as the starting point of the program's execution.</li>
-            </ul>
-
-            <p>In summary, <code>public static void main(String[] args)</code> is the method where the Java program
-                begins execution.</p>
-
-            <h2>Difference Between `next()` and `nextLine()` Methods</h2>
-
-            <p>The <code>next()</code> and <code>nextLine()</code> methods are used to read input from the user in Java,
-                but they work differently:</p>
-
-            <h2>`next()` Method</h2>
-            <p>The <code>next()</code> method reads the next token (word) from the input. It stops reading when it
-                encounters a space or a newline character.</p>
-
-            <ul>
-                <li><strong>Usage:</strong> Use <code>next()</code> to read a single word or token at a time.</li>
-                <li><strong>Delimiters:</strong> It uses whitespace (spaces, tabs) as delimiters by default.</li>
-                <li><strong>Example:</strong>
-                    <div class="code">
-                        <pre>
-                import java.util.Scanner;
-                
-                public class Example {
-                    public static void main(String[] args) {
-                        Scanner scanner = new Scanner(System.in);
-                        System.out.print("Enter your name: ");
-                        String name = scanner.next();
-                        System.out.println("Hello, " + name + "!");
-                    }
-                }
-                    </pre>
-                    </div>
-                </li>
-            </ul>
-
-            <h2>`nextLine()` Method</h2>
-            <p>The <code>nextLine()</code> method reads the entire line of input until it encounters a newline
-                character. It includes all characters, including spaces.</p>
-
-            <ul>
-                <li><strong>Usage:</strong> Use <code>nextLine()</code> to read a full line of text, including spaces.
-                </li>
-                <li><strong>Delimiter:</strong> It uses the newline character as the delimiter.</li>
-                <li><strong>Example:</strong>
-                    <div class="code">
-                        <pre>
-                import java.util.Scanner;
-                
-                public class Example {
-                    public static void main(String[] args) {
-                        Scanner scanner = new Scanner(System.in);
-                        System.out.print("Enter your full name: ");
-                        String fullName = scanner.nextLine();
-                        System.out.println("Hello, " + fullName + "!");
-                    }
-                }
-                    </pre>
-                    </div>
-                </li>
-            </ul>
-
-            <h2>Summary</h2>
-            <ul>
-                <li><strong><code>next()</code>:</strong> Reads the next token (word) until whitespace.</li>
-                <li><strong><code>nextLine()</code>:</strong> Reads the entire line until newline.</li>
-            </ul>
-
-            <p>Use <code>next()</code> for single words and <code>nextLine()</code> for full lines of input.</p>
-
-            <h2>Difference Between `print()` and `println()` Methods</h2>
-
-            <p>In Java, the <code>print()</code> and <code>println()</code> methods are used for displaying output to
-                the console. Here’s how they differ:</p>
-
-            <h2>`print()` Method</h2>
-            <p>The <code>print()</code> method outputs text to the console without moving to a new line. It keeps the
-                cursor on the same line after the output.</p>
-
-            <ul>
-                <li><strong>Usage:</strong> Use <code>print()</code> when you want to continue printing on the same
-                    line.</li>
-                <li><strong>Example:</strong>
-                    <div class="code">
-                        <pre>
-public class Example {
-    public static void main(String[] args) {
-        System.out.print("Hello, ");
-        System.out.print("World!");
-    }
-}
-    </pre>
-                    </div>
-                </li>
-                <li><strong>Output:</strong> <code>Hello, World!</code></li>
-            </ul>
-
-            <h2>`println()` Method</h2>
-            <p>The <code>println()</code> method outputs text to the console and moves the cursor to a new line after
-                the output. It is used to print text followed by a newline character.</p>
-
-            <ul>
-                <li><strong>Usage:</strong> Use <code>println()</code> when you want to print text and start a new line
-                    after it.</li>
-                <li><strong>Example:</strong>
-                    <div class="code">
-                        <pre>
-public class Example {
-    public static void main(String[] args) {
-        System.out.println("Hello,");
-        System.out.println("World!");
-    }
-}
-    </pre>
-                    </div>
-                </li>
-                <li><strong>Output:</strong>
-                    <code>Hello,</code><br>
-                    <code>World!</code>
-                </li>
-            </ul>
-
-            <h2>Summary</h2>
-            <ul>
-                <li><strong><code>print()</code>:</strong> Outputs text without moving to a new line.</li>
-                <li><strong><code>println()</code>:</strong> Outputs text and moves to a new line.</li>
-            </ul>
-
-            <p>Use <code>print()</code> to continue on the same line and <code>println()</code> to start a new line
-                after the output.</p>
-
-            <h2>Java Program to Find the Area and Perimeter of a Rectangle</h2>
-
-            <p>Below is a Java program that calculates the area and perimeter of a rectangle:</p>
-
-            <div class="code">
-                <pre>
-import java.util.Scanner;
-
-public class Rectangle {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        // Input: Length and Width of the rectangle
-        System.out.print("Enter the length of the rectangle: ");
-        double length = scanner.nextDouble();
-        
-        System.out.print("Enter the width of the rectangle: ");
-        double width = scanner.nextDouble();
-        
-        // Calculate area and perimeter
-        double area = length * width;
-        double perimeter = 2 * (length + width);
-        
-        // Output: Area and Perimeter
-        System.out.println("Area of the rectangle: " + area);
-        System.out.println("Perimeter of the rectangle: " + perimeter);
-        
-        scanner.close();
-    }
-}
-</pre>
-            </div>
-
-            <p>This program performs the following steps:</p>
-
-            <ul>
-                <li><strong>Input:</strong> Reads the length and width of the rectangle from the user.</li>
-                <li><strong>Calculation:</strong> Computes the area (length × width) and perimeter (2 × (length +
-                    width)).</li>
-                <li><strong>Output:</strong> Displays the area and perimeter of the rectangle.</li>
-            </ul>
-
-            <p>To run this program, compile it using a Java compiler and execute it. The program will prompt you for the
-                dimensions of the rectangle and then display the results.</p>
-
-
-            <h2>Java Program to Convert Days into Years, Weeks, and Days</h2>
-
-            <p>Below is a Java program that takes the number of days as input and computes the equivalent years, weeks,
-                and days:</p>
-
-            <div class="code">
-                <pre>
-import java.util.Scanner;
-
-public class DaysConverter {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        // Input: Number of days
-        System.out.print("Enter the number of days: ");
-        int totalDays = scanner.nextInt();
-        
-        // Constants
-        int daysInYear = 365;
-        int daysInWeek = 7;
-        
-        // Calculate years, weeks, and days
-        int years = totalDays / daysInYear;
-        int remainingDays = totalDays % daysInYear;
-        int weeks = remainingDays / daysInWeek;
-        int days = remainingDays % daysInWeek;
-        
-        // Output: Years, Weeks, and Days
-        System.out.println(totalDays + " days is equivalent to:");
-        System.out.println(years + " year(s)");
-        System.out.println(weeks + " week(s)");
-        System.out.println(days + " day(s)");
-        
-        scanner.close();
-    }
-}
-</pre>
-            </div>
-
-            <p>This program performs the following steps:</p>
-
-            <ul>
-                <li><strong>Input:</strong> Reads the total number of days from the user.</li>
-                <li><strong>Calculation:</strong> Computes the number of years, weeks, and days by dividing and taking
-                    remainders.</li>
-                <li><strong>Output:</strong> Displays the number of years, weeks, and days.</li>
-            </ul>
-
-            <p>To run this program, compile it using a Java compiler and execute it. The program will prompt you for the
-                number of days and then display the equivalent years, weeks, and days.</p>
-
-            <div class="date">
-                <p>16 August, 2024</p>
-            </div>
-
-            <h2>Operators</h2>
-            <p>Operators are symbols which are used to perform operation on operands.</p>
-            <ul>
-                <li><strong>Arithmetic Operators : </strong>
-                    Addtion (+) | Substraction (-) | Multiplication (*) | Division (/) | Modulo[Remainer Collector] (%)
-                </li> <br>
-                <li><strong>Relational Operators : </strong> These operators specifies relation b/w two entities.
-                    <br><br>
-                    Greater Than (>) | Less Than (<) | Greater Than or Equal to (>=) | Less Than or Equal to (<=)
-                            |==equality [a==b] | Not equal to (!=) </li>
-                            <br>
-                <li><strong>Assignment Operator : </strong> a=b //Copies value of b to a</li>
-                <br>
-                <li><strong>Increment Operator : </strong> Increment Operator increase value of a variable by 1. <br>
-                    a++ //a=a+1;</li>
-                <br>
-                <li><strong>Decrement Operator : </strong> Decrement Operator increase value of a variable by 1. <br>
-                    a-- //a=a-1;</li><br>
-                <li><strong>Logical Operators : </strong> Logical Operators are used to combine two or more conditions.
-                    <br><br>
-                    AND (&&) | OR (||) | NOT (!)
-                </li>
-            </ul>               
-                <br>
-                <h2>Decision Controls</h2>
-                <p>Decision Controls are used for decision making.If you want to execute code
-                based on some condition then you can use decision control. In java there are following types of decision control : </p>
-                <ol>
-                    <li><strong>if Statement : </strong>if is a keyword which works as decision control. We attach a
-                        condition with if statement. If given condtiion is true then code will be executed and if given
-                        condition is false then code will not be executed.</li>
-                    <div class="code">
-                        <pre>
                         Syntax : 
 
                         if (Condition) {
                             //code
                         }
                     </pre>
-                    </div>
-                    <li><strong>if-else Statement :</strong> if else is variation of if statement. We attact a condition
-                        with if statement. if given condition is true then if block code will executed and if given
-                        condition is false then else block code will be executed.</li>
-                    <div class="code">
-                        <pre>
+            </div>
+            <li><strong>if-else Statement :</strong> if else is variation of if statement. We attact a condition
+                with if statement. if given condition is true then if block code will executed and if given
+                condition is false then else block code will be executed.</li>
+            <div class="code">
+                <pre>
                         Syntax : 
                         
                         if (Condition) {
@@ -779,62 +176,72 @@ public class DaysConverter {
                             // else block code
                         }
                     </pre>
-                    </div>
-                  
-                    <div class="date">
-                        <p>17 August, 2024</p>
-                    </div> 
+            </div>
 
-                    <li><strong>ladder if-else Statement :</strong></li>
-                    <li><strong>Switch Statement :</strong></li>
-                </ol>
-                
+            <div class="date">
+                <p>17 August, 2024</p>
+            </div>
 
-            <h2>Tasks</h2>
-            <ol>
-                <li>WAP to take a number as input. Now check given number is positive or negative or zero.</li>
-                <li>WAP to take a number as input. Now check given number is even or odd.</li>
-                <li>WAP tofind simple interest. <br> si = (p*r*t)/100</li>
-                <li>What are different types of operators in java? Explain.</li>
-            </ol>
+            <li><strong>ladder if-else Statement :</strong></li>
+            <li><strong>Switch Statement :</strong></li>
+        </ol>
 
-            <h2>Loop Control</h2>
-            <p></p>
 
-                <ol>
+        <h2>Tasks</h2>
+        <ol>
+            <li>WAP to take a number as input. Now check given number is positive or negative or zero.</li>
+            <li>WAP to take a number as input. Now check given number is even or odd.</li>
+            <li>WAP tofind simple interest. <br> si = (p*r*t)/100</li>
+            <li>What are different types of operators in java? Explain.</li>
+        </ol>
 
-                    <li><strong>while Statement : </strong></li>
-                    <div class="code"><pre></pre></div>
+        <h2>Loop Control</h2>
+        <p></p>
 
-                    <div class="date">
-                        <p>18 August, 2024</p>
-                    </div>
+        <ol>
 
-                    <li><strong>for Statement : </strong></li>
-                    <div class="code"><pre></pre></div>
+            <li><strong>while Statement : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
 
-                    <li><strong>do while loop : </strong></li>
-                    <div class="code"><pre></pre></div>
+            <div class="date">
+                <p>18 August, 2024</p>
+            </div>
 
-                    <li><strong>for each loop : </strong></li>
-                    <div class="code"><pre></pre></div>
+            <li><strong>for Statement : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
 
-                </ol>
+            <li><strong>do while loop : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
 
-                <h2>Tasks</h2>
-                <ol>
-                    <li>WAP to find the input number is prime or not</li>
-                    <li>WAP to find the Fibonacci Series.</li>
-                </ol>
+            <li><strong>for each loop : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
 
-                <div class="date">
-                    <p>19 August, 2024</p>
-                </div>
+        </ol>
 
-                <h2>Array</h2>
-                <p>Array is collection of simillar data types that means an array can store mutiple values of similar data types.</p>
+        <h2>Tasks</h2>
+        <ol>
+            <li>WAP to find the input number is prime or not</li>
+            <li>WAP to find the Fibonacci Series.</li>
+        </ol>
 
-                <div class="code"><pre>
+        <div class="date">
+            <p>19 August, 2024</p>
+        </div>
+
+        <h2>Array</h2>
+        <p>Array is collection of simillar data types that means an array can store mutiple values of similar data
+            types.</p>
+
+        <div class="code">
+            <pre>
                 Delcaration of Array :
 
                 datatype [] arrayname = new datatype[size];
@@ -886,6 +293,7 @@ public class DaysConverter {
                 for(i=0; i<5; i++) {
                     arr[i] = sc.nextInt();
                 }
+
             </pre>
         </div>
 
