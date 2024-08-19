@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java - Notes</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Java - Notes</h1>
+        <hr>
+        <h2>Introduction of Java</h2>
+        <ul>
+            <li>Author : James Gosling</li>
+            <li>Vendor : Sun Microsystem (Now merged in Oracle)</li>
+            <li>Programming Type : Object Oriented and Open Source</li>
+            <li>Initial Name : Oak</li>
+            <li>Present Name : Java</li>
+            <li>Project Name : Project Green</li>
+            <li>Slogan : WORA (Write Once Run Anywhere)</li>
+            <li>Symbol : Coffee Cup with Saucer</li>
+            <li>Extension : .java, .class, .jar</li>
+            <li>First Version : JDK 1.0</li>
+            <li>Present Name : JDK 22</li>
+        </ul>
+
+        <h2>Java components</h2>
+        <ul>
+            <li><strong>JDK : </strong>Java Development Kit is a Software Pacakage. It contains Java
+                Compiler, Java Runtime Environment and Java Virtual Machine.</li>
+            <li><strong>Java Compiler : </strong>Java Compiler is a type of translator, which converts source code to
+                byte code.</li>
+            <li><strong>JRE : </strong>Java Runtime Environment create a layer between java application and operating
+                system. Java application is executed under supervision of JRE.</li>
+            <li><strong>JVM : </strong>Java Virtual Machine is an agent of java, which converts byte code to machine
+                code.</li>
+        </ul>
+
+        <h2>Execution Scenario of Java</h2>
+        <ul>
+            <li>1. Source Code (.java) Compiled in Byte Code (.class) through Java Compiler.</li>
+            <li>2. Byte Code (.class) Executed through JVM.</li>
+            <li>3. JVM Converts the byte in Machine Code and we Get Output.</li>
+        </ul>
+
+        <h2>Keywords</h2>
+        <p>Keywords are reserved words with predefined meanings in the compiler. There are 50 keywords in Java, such as:
+        </p>
+        <ul>
+            <li><strong>Data types:</strong> int, float, char, double, long, short, byte, Boolean</li>
+            <li><strong>Control structures:</strong> if, else, switch, break, default, do, while, for, continue</li>
+            <li><strong>Others:</strong> void, return, new, class, interface, abstract</li>
+        </ul>
+
+        <h2>Class, Package, Variables</h2>
+        <ul>
+            <li><strong>Class : </strong>A Class is the blueprint of objects. It is a container of variables and
+                methods.</li>
+            <li><strong>Package : </strong> A Package is a collection of classes, interfaces, and sub-packages.</li>
+            <li><strong>Variables : </strong> Variables are value containers that create space in memory.</li>
+        </ul>
+
+        <h2>public static void main(String[] args) Explained</h2>
+        <ul>
+            <li><strong>public:</strong> A keyword which works as an access modifier.</li>
+            <li><strong>static:</strong> Static is a keyword which works as modifier. If you create a method with static
+                modifier then that method can be call wtihout object. <br> A modifier indicating no need for an object
+                to call the method.</li>
+            <li><strong>void:</strong> Void is a keyword which works as return type. Indicates no return value.</li>
+            <li><strong>main():</strong> The pre-defined method name, starting point of the program.</li>
+            <li><strong>String[] args:</strong> This array is used to take command line input.</li>
+        </ul>
+
+        <h2>System.out.println(" "); Explained</h2>
+        <ul>
+            <li><strong>System : </strong>Class</li>
+            <li><strong>out : </strong>Object</li>
+            <li><strong>println() : </strong>Method</li>
+        </ul>
+
+        <hr>
+
+        <div class="date">
+            <p>14 August, 2024</p>
+        </div>
+
+        <h2>Tasks</h2>
+        <ol>
+            <li>What is a Class? Explain with an example.</li>
+            <li>What is OOPs? Write its pillars.</li>
+            <li>What is a package in Java? Explain with an example.</li>
+            <li>What is Decision Control? Describe each decision control.</li>
+            <li>What is a string in Java? Explain.</li>
+        </ol>
+
+        <div class="date">
+            <p>15 August, 2024</p>
+        </div>
+
+        <h2>Tasks</h2>
+        <ol>
+            <li>What is Java? Write difference between C, C++ and Java.</li>
+            <li>Why Java is Platform Independent?</li>
+            <li>Describe JDK, JRE and JVM.</li>
+            <li>What is Package in java?</li>
+            <li>What is class and object?</li>
+            <li>Describe public static void main().</li>
+            <li>What is differnce between next() and nextLine() method?</li>
+            <li>What is differnce between print() and println() method?</li>
+            <li>WAP to find area and perimeter of Rectangle.</li>
+            <li>WAP to take number of days as input and compute years. weeks and days.</li>
+            <li>Input : 375 <br> Output : 1 year 1 week 3 days <br> avoid leap year.</li>
+        </ol>
+
+
+        <div class="date">
+            <p>16 August, 2024</p>
+        </div>
+
+        <h2>Operators</h2>
+        <p>Operators are symbols which are used to perform operation on operands.</p>
+        <ul>
+            <li><strong>Arithmetic Operators : </strong>
+                Addtion (+) | Substraction (-) | Multiplication (*) | Division (/) | Modulo[Remainer Collector] (%)
+            </li> <br>
+            <li><strong>Relational Operators : </strong> These operators specifies relation b/w two entities.
+                <br><br>
+                Greater Than (>) | Less Than (<) | Greater Than or Equal to (>=) | Less Than or Equal to (<=)
+                        |==equality [a==b] | Not equal to (!=) </li>
+                        <br>
+            <li><strong>Assignment Operator : </strong> a=b //Copies value of b to a</li>
+            <br>
+            <li><strong>Increment Operator : </strong> Increment Operator increase value of a variable by 1. <br>
+                a++ //a=a+1;</li>
+            <br>
+            <li><strong>Decrement Operator : </strong> Decrement Operator increase value of a variable by 1. <br>
+                a-- //a=a-1;</li><br>
+            <li><strong>Logical Operators : </strong> Logical Operators are used to combine two or more conditions.
+                <br><br>
+                AND (&&) | OR (||) | NOT (!)
+            </li>
+        </ul>
+        <br>
+        <h2>Decision Controls</h2>
+        <p>Decision Controls are used for decision making.If you want to execute code
+            based on some condition then you can use decision control. In java there are following types of decision
+            control : </p>
+        <ol>
+            <li><strong>if Statement : </strong>if is a keyword which works as decision control. We attach a
+                condition with if statement. If given condtiion is true then code will be executed and if given
+                condition is false then code will not be executed.</li>
+            <div class="code">
+                <pre>
+                        Syntax : 
+
+                        if (Condition) {
+                            //code
+                        }
+                    </pre>
+            </div>
+            <li><strong>if-else Statement :</strong> if else is variation of if statement. We attact a condition
+                with if statement. if given condition is true then if block code will executed and if given
+                condition is false then else block code will be executed.</li>
+            <div class="code">
+                <pre>
+                        Syntax : 
+                        
+                        if (Condition) {
+                            // if block code
+                        }
+                        else {
+                            // else block code
+                        }
+                    </pre>
+            </div>
+
+            <div class="date">
+                <p>17 August, 2024</p>
+            </div>
+
+            <li><strong>ladder if-else Statement :</strong></li>
+            <li><strong>Switch Statement :</strong></li>
+        </ol>
+
+
+        <h2>Tasks</h2>
+        <ol>
+            <li>WAP to take a number as input. Now check given number is positive or negative or zero.</li>
+            <li>WAP to take a number as input. Now check given number is even or odd.</li>
+            <li>WAP tofind simple interest. <br> si = (p*r*t)/100</li>
+            <li>What are different types of operators in java? Explain.</li>
+        </ol>
+
+        <h2>Loop Control</h2>
+        <p></p>
+
+        <ol>
+
+            <li><strong>while Statement : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
+
+            <div class="date">
+                <p>18 August, 2024</p>
+            </div>
+
+            <li><strong>for Statement : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
+
+            <li><strong>do while loop : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
+
+            <li><strong>for each loop : </strong></li>
+            <div class="code">
+                <pre></pre>
+            </div>
+
+        </ol>
+
+        <h2>Tasks</h2>
+        <ol>
+            <li>WAP to find the input number is prime or not</li>
+            <li>WAP to find the Fibonacci Series.</li>
+        </ol>
+
+        <div class="date">
+            <p>19 August, 2024</p>
+        </div>
+
+        <h2>Array</h2>
+        <p>Array is collection of simillar data types that means an array can store mutiple values of similar data
+            types.</p>
+
+        <div class="code">
+            <pre>
+                Delcaration of Array :
+
+                datatype [] arrayname = new datatype[size];
+
+                E.g. : int [] arr = new int[10];
+
+                The above array can store ten numbers of integer types.
+
+                Initialization of Array :
+
+                int [] arr = {10, 20, 30, 40, 50};
+
+                arr[0] = 10;
+                arr[1] = 20;
+                arr[2] = 30;
+                arr[3] = 40;
+                arr[4] = 50;
+
+                <table border="1" cellpadding="10" align="center">
+                    <tr>
+                        <td colspan="5" align="center">Memory Representation of Array</td>
+                    </tr>
+                    <tr>
+                        <td>arr[0]</td>
+                        <td>arr[1]</td>
+                        <td>arr[2]</td>
+                        <td>arr[3]</td>
+                        <td>arr[4]</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>20</td>
+                        <td>30</td>
+                        <td>40</td>
+                        <td>50</td>
+                    </tr>
+                </table>
+            </pre>
+        </div>
+
+        <h2>How to take input from user for an array?</h2>
+        <div class="code">
+            <pre>
+                int [] arr = int[5];
+                int i;
+                Scanner sc = new Scanner(System.in);
+                System.out.println("Enter five numbers");
+
+                for(i=0; i<5; i++) {
+                    arr[i] = sc.nextInt();
+                }
+
+            </pre>
+        </div>
+
+        <h2>Tasks</h2>
+        <ol>
+            <li>WAP to store ten numbers in array by user input. Now find maximum and minimum number.</li>
+            <li>WAP to store ten numbers in array by user input. Now search a number in array.</li>
+        </ol>
+
+    </div>
+
+</body>
+
+</html>
