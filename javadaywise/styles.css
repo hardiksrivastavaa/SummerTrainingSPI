@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+}
+
+div {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+code {
+    display: block;
+    background-color: #fafafa;
+    padding: 20px;
+    border-left: 6px solid #00796b;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.output {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-left: 6px solid #388e3c;
+    color: #2c6b2f;
+    margin-top: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.copy-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #004d40;
+}
+
+.copy-btn i {
+    margin-right: 8px;
+}
+
+@media (max-width: 600px) {
+    div {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    code {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .output {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .copy-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .copy-btn i {
+        margin-right: 6px;
+    }
+}

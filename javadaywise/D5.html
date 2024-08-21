@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - 19 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+        <p>Day 1 - 19 August, 2024</p>
+        <div>
+            <p>Program 1: WAP to store five numbers in an array and print numbers</p>
+            <code id="code-block-1">
+import java.util.*;
+
+class P1 {
+    public static void main(String[] args) {
+
+        int[] arr = new int[5];
+
+        int i, j;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Five Numbers : ");
+
+        for (i = 0; i < 5; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.print("Here is the array : ");
+        for (i = 0; i < 5; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter Five Numbers : 10 20 30 40 50<br><br>
+                Output:<br>
+                Here is the array : 10 20 30 40 50
+            </div>
+        </div>
+
+        <div>
+            <p>Program 2: WAP to find sum and average of 10 numbers using array</p>
+            <code id="code-block-2">
+import java.util.*;
+
+class P2 {
+    public static void main(String[] args) {
+
+        int[] arr = new int[10];
+        int i, sum = 0;
+        double avg;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 10 Numbers : ");
+
+        for (i = 0; i < 10; i++) {
+            arr[i] = sc.nextInt();
+            sum += arr[i];
+        }
+
+        avg = (float) sum / 10;
+
+        System.out.print("Sum of 10 Numbers is " + sum + " and average is " + avg);
+
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-2')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter 10 Numbers : 1 2 3 4 5 6 7 8 9 10<br><br>
+                Output:<br>
+                Sum of 10 Numbers is 55 and average is 5.5
+            </div>
+        </div>
+
+        <div>
+            <p>Program 3: WAP to store five numbers in list and display numbers in sorted order</p>
+            <code id="code-block-3">
+import java.util.*;
+
+class P3 {
+    public static void main(String[] args) {
+
+        int arr[] = new int[5];
+
+        int i;
+
+        System.out.println("Enter 5 Numbers : ");
+
+        for (i = 0; i < 5; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        Arrays.sort(arr);
+
+        System.out.print("Here is the sorted array : ");
+
+        for (i = 0; i < 5; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-3')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter 5 Numbers : 5 3 8 1 7<br><br>
+                Output:<br>
+                Here is the sorted array : 1 3 5 7 8
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

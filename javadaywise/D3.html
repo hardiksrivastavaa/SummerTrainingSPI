@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3 - 17 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+        <p>Day 3 - 17 August, 2024</p>
+
+        <div>
+            <p>Program 1: WAP to find the greatest Number in three unequal Numbers</p>
+            <code id="code-block-1">
+import java.util.*;
+
+class P1 {
+    public static void main(String[] args) {
+        int a, b, c;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of a : ");
+        a = sc.nextInt();
+        System.out.print("Enter the value of b : ");
+        b = sc.nextInt();
+        System.out.print("Enter the value of c : ");
+        c = sc.nextInt();
+
+        if (a > b && a > c) {
+            System.out.print(a + "(a) is the greatest number");
+        }
+        if (b > a && b > c) {
+            System.out.print(b + "(b) is the greatest number");
+        } else {
+            System.out.print(c + "(c) is the greatest number");
+        }
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter the value of a : 10<br>
+                Enter the value of b : 20<br>
+                Enter the value of c : 30<br><br>
+                Output:<br>
+                30(c) is the greatest number
+            </div>
+        </div>
+
+        <div>
+            <p>Program 2: WAP to take day number as input and display day of week</p>
+            <code id="code-block-2">
+import java.util.*;
+
+class P2 {
+    public static void main(String[] args) {
+
+        int dn;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the day number : ");
+
+        dn = sc.nextInt();
+
+        switch (dn) {
+            case 1:
+                System.out.print("Sunday");
+                break;
+            case 2:
+                System.out.print("Monday");
+                break;
+            case 3:
+                System.out.print("Tuesday");
+                break;
+            case 4:
+                System.out.print("Wednesday");
+                break;
+            case 5:
+                System.out.print("Thursday");
+                break;
+            case 6:
+                System.out.print("Friday");
+                break;
+            case 7:
+                System.out.print("Saturday");
+                break;
+            default:
+                System.out.print("Invalid Day");
+        }
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-2')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter the day number : 3<br><br>
+                Output:<br>
+                Tuesday
+            </div>
+        </div>
+
+        <div>
+            <p>Program 3: WAP to print number up to a limit defined by user</p>
+            <code id="code-block-3">
+import java.util.*;
+
+class P3 {
+    public static void main(String[] args) {
+
+        int n;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Maximum Limit : ");
+        n = sc.nextInt();
+
+        int i = 1;
+        while (i <= n) {
+            System.out.print(i + "   ");
+            i++;
+        }
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-3')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter Maximum Limit : 5<br><br>
+                Output:<br>
+                1 2 3 4 5
+            </div>
+        </div>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

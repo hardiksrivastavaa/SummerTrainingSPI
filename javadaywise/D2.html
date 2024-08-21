@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 - 16 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div>
+        <p>Day 2 - 16 August, 2024</p>
+
+        <div>
+            <p>Program 1: WAP to take user name as input and print a message with his name</p>
+            <code id="code-p1">
+import java.util.Scanner;
+
+class P1 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+
+        String naam = scanner.nextLine(); 
+
+        System.out.println("Hello, " + naam + "!");
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-p1')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter your name: John<br><br>
+                Output:<br>
+                Hello, John!
+            </div>
+        </div>
+
+        <div>
+            <p>Program 2: WAP to convert temperature from Centigrade to Fahrenheit</p>
+            <code id="code-p2">
+import java.util.*;
+
+class P2 {
+    public static void main(String[] args) {
+
+        double c, f;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Temperature in Centigrade : ");
+        c = sc.nextDouble();
+
+        f = (9 * c) / 5 + 32;
+
+        System.out.print("Temperature in Fahrenheit : " + f);
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-p2')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter Temperature in Centigrade: 25<br><br>
+                Output:<br>
+                Temperature in Fahrenheit: 77.0
+            </div>
+        </div>
+
+        <div>
+            <p>Program 3: WAP to convert temperature from Fahrenheit to Centigrade</p>
+            <code id="code-p3">
+import java.util.*;
+
+class P3 {
+    public static void main(String[] args) {
+
+        double c, f;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter Temperature in Fahrenheit : ");
+        f = sc.nextDouble();
+
+        c = (f - 32) * 5 / 9;
+
+        System.out.print("Temperature in Centigrade : " + c);
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-p3')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter Temperature in Fahrenheit: 77<br><br>
+                Output:<br>
+                Temperature in Centigrade: 25.0
+            </div>
+        </div>
+
+        <div>
+            <p>Program 4: Use of if statement</p>
+            <code id="code-p4">
+import java.util.*;
+
+class P4 {
+    public static void main(String[] args) {
+
+        int n;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number : ");
+        n = sc.nextInt();
+
+        if (n == 1) {
+            System.out.print("Hiii Hardik!!");
+        }
+
+        System.out.println("Bye Hardik!!");
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-p4')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter a number: 1<br><br>
+                Output:<br>
+                Hiii Hardik!!<br>
+                Bye Hardik!!
+            </div>
+        </div>
+
+        <div>
+            <p>Program 5: WAP to find the greatest number in two unequal numbers</p>
+            <code id="code-p5">
+import java.util.*;
+
+class P5 {
+    public static void main(String[] args) {
+
+        int a, b;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the value of a : ");
+        a = sc.nextInt();
+
+        System.out.print("Enter the value of b : ");
+        b = sc.nextInt();
+
+        if (a > b) {
+            System.out.println("a is greater than b.");
+        } else {
+            System.out.println("b is greater than a.");
+        }
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-p5')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter the value of a: 10<br>
+                Enter the value of b: 20<br><br>
+                Output:<br>
+                b is greater than a.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

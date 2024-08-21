@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - 20 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+        <p>Day 1 - 19 August, 2024</p>
+
+        <div>
+            <p>Program 1: WAP to print your name on user input with string methods</p>
+            <code id="code-block-1">
+import java.util.*;
+
+class P1 {
+    public static void main(String[] args) {
+
+        String name;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter you name : ");
+        name = sc.nextLine();
+
+        System.out.println("Your name in uppercase : " + name.toUpperCase());
+        System.out.println("Your name in lowercase : " + name.toLowerCase());
+        System.out.println("Length of Your Name : " + name.length());
+
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter your name: Hardik Srivastava<br><br>
+                Output:<br>
+                Your name in uppercase : HARDIK SRIVASTAVA<br>
+                Your name in lowercase : hardik srivastava<br>
+                Length of Your Name : 17
+            </div>
+        </div>
+
+        <div>
+            <p>Program 2: WAP to compare two strings for equality</p>
+            <code id="code-block-2">
+import java.util.*;
+
+class P2 {
+    public static void main(String[] args) {
+
+        String str1, str2;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your first string to compare : ");
+        str1 = sc.nextLine();
+
+        System.out.print("Enter your second string to compare : ");
+        str2 = sc.nextLine();
+
+        if (str1.equalsIgnoreCase(str2)) {
+            System.out.print("Both strings are same.");
+        } else {
+            System.out.print("Both strings are not same.");
+        }
+
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-2')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter your first string to compare : Java<br>
+                Enter your second string to compare : java<br><br>
+                Output:<br>
+                Both strings are same.
+            </div>
+        </div>
+
+        <div>
+            <p>Program 3: WAP to create a word counter</p>
+            <code id="code-block-3">
+import java.util.*;
+
+class P3 {
+    public static void main(String[] args) {
+
+        String str;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your String to count the words : ");
+        str = sc.nextLine();
+        String[] words = str.split(" ");
+
+        System.out.print("Here are the words counts : " + words.length);
+
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-3')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter your String to count the words : Java is a powerful programming language<br><br>
+                Output:<br>
+                Here are the words counts : 6
+            </div>
+        </div>
+
+        <div>
+            <p>Program 4: WAP to replace a word in string using replace method</p>
+            <code id="code-block-4">
+import java.util.*;
+
+class P4 {
+    public static void main(String[] args) {
+
+        String str, fw, rw;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a Sentence : ");
+        str = sc.nextLine();
+
+        System.out.print("Find What ? ");
+        fw = sc.nextLine();
+
+        System.out.print("Replace What ? ");
+        rw = sc.nextLine();
+
+        System.out.print("Here is the modified sentence : " + str.replace(fw, rw));
+
+    }
+}
+        </code>
+            <a class="copy-btn" onclick="copyCode('code-block-4')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter a Sentence : I love programming in Java<br>
+                Find What ? Java<br>
+                Replace What ? Python<br><br>
+                Output:<br>
+                Here is the modified sentence : I love programming in Python
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
