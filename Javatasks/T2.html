@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to take the number of days as input and compute years, weeks, and days.</p>
+        <code id="code-block">
+import java.util.*;
+
+public class T2 {
+    public static void main(String[] args) {
+        int dayIn, years, dayRemain, days, weeks;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number of days: ");
+        dayIn = sc.nextInt();
+
+        years = dayIn / 365;
+        dayRemain = dayIn % 365;
+        weeks = dayRemain / 7;
+        days = dayRemain % 7;
+
+        // Output: Years, Weeks, and Days
+        System.out.println(dayIn + " days is equal to: ");
+        System.out.println(years + " year");
+        System.out.println(weeks + " week");
+        System.out.println(days + " days");
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Input: 375<br>
+            Output:<br>
+            1 year<br>
+            1 week<br>
+            3 days
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

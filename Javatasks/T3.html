@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to take a number as input and check if it is positive, negative, or zero.</p>
+        <code id="code-block">
+import java.util.*;
+
+class T3 {
+    public static void main(String[] args) {
+        int n;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the value of n : ");
+        n = sc.nextInt();
+
+        if (n >= 1) {
+            System.out.println(n + " is a positive number.");
+        } else if (n == 0) {
+            System.out.println(n + " is a zero.");
+        } else {
+            System.out.println(n + " is a negative number.");
+        }
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Input: 5<br>
+            Output:<br>
+            5 is a positive number.<br><br>
+
+            Input: 0<br>
+            Output:<br>
+            0 is a zero.<br><br>
+
+            Input: -3<br>
+            Output:<br>
+            -3 is a negative number.
+        </div>
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

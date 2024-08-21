@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 10</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to print the table of a given number.</p>
+        <code id="code-block">
+import java.util.*;
+
+class T10 {
+    public static void main(String[] args) {
+
+        int n;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number to get the table of that number: ");
+        n = sc.nextInt();
+
+        System.out.println("Table of " + n + " is here: ");
+        for (int i = 1; i <= 10; i++) {
+            int t = n * i;
+            System.out.println(n + " * " + i + " = " + t);
+        }
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Input:<br>
+            Number: 7<br><br>
+            Output:<br>
+            Table of 7 is here:<br>
+            7 * 1 = 7<br>
+            7 * 2 = 14<br>
+            7 * 3 = 21<br>
+            7 * 4 = 28<br>
+            7 * 5 = 35<br>
+            7 * 6 = 42<br>
+            7 * 7 = 49<br>
+            7 * 8 = 56<br>
+            7 * 9 = 63<br>
+            7 * 10 = 70
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

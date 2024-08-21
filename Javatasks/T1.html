@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to find the area and perimeter of a Rectangle.</p>
+        <code id="code-block">
+import java.util.*;
+
+class T1 {
+    public static void main(String[] args) {
+        int a, l, w, p;
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the length of the rectangle: ");
+        l = sc.nextInt();
+
+        System.out.print("Enter the width of the rectangle: ");
+        w = sc.nextInt();
+
+        a = l * w;
+        p = 2 * (l + w);
+
+        System.out.println("Area of the rectangle: " + a);
+        System.out.println("Perimeter of the rectangle: " + p);
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Enter the length of the rectangle: 5<br>
+            Enter the width of the rectangle: 3<br>
+            Area of the rectangle: 15<br>
+            Perimeter of the rectangle: 16
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

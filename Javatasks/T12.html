@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 12</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to find the Fibonacci Series of a given number</p>
+        <code id="code-block">
+import java.util.*;
+
+class T12 {
+    public static void main(String[] args) {
+
+        int n, n1 = 0, n2 = 1, n3, i;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("How many terms you want in series : ");
+        n = sc.nextInt();
+
+        System.out.print(n1 + " " + n2 + " ");
+
+        for (i = 1; i <= n - 2; i++) {
+            n3 = n1 + n2;
+            System.out.print(n3 + " ");
+            n1 = n2;
+            n2 = n3;
+        }
+
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Input:<br>
+            How many terms you want in series: 10<br><br>
+            Output:<br>
+            0 1 1 2 3 5 8 13 21 34
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

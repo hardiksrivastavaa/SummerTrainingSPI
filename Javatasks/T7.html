@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 7</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to make a temperature converter based on user choice.</p>
+        <code id="code-block">
+import java.util.*;
+
+public class T7 {
+    public static void main(String[] args) {
+
+        int n;
+        double c, f;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print(
+                "Enter 1 for Centigrade to Fahrenheit Conversion and 2 for Fahrenheit to Centigrade Conversion: ");
+        n = sc.nextInt();
+
+        switch (n) {
+            case 1:
+                System.out.println("Enter value in Centigrade: ");
+                c = sc.nextDouble();
+                f = (9 * c) / 5 + 32;
+                System.out.println(f + " is the temperature in Fahrenheit.");
+                break;
+
+            case 2:
+                System.out.println("Enter value in Fahrenheit: ");
+                f = sc.nextDouble();
+                c = (f - 32) * 5 / 9;
+                System.out.println(c + " is the temperature in Centigrade.");
+                break;
+
+            default:
+                System.out.println("Enter choice 1 or 2!");
+                break;
+        }
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Input:<br>
+            Choice: 1<br>
+            Centigrade: 25<br><br>
+            Output:<br>
+            77.0 is the temperature in Fahrenheit.<br><br>
+
+            Input:<br>
+            Choice: 2<br>
+            Fahrenheit: 77<br><br>
+            Output:<br>
+            25.0 is the temperature in Centigrade.
+        </div>
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

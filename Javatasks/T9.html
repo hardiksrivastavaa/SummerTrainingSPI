@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 9</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to find the factorial of a given number.</p>
+        <code id="code-block">
+import java.util.*;
+
+class T9 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number to get the factorial: ");
+        int n = sc.nextInt();
+
+        long factorial = 1;
+        int i = 1;
+
+        while (i <= n) {
+            factorial *= i;
+            i++;
+        }
+
+        System.out.println("Factorial is: " + factorial);
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Input:<br>
+            Number: 5<br><br>
+            Output:<br>
+            Factorial is: 120
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

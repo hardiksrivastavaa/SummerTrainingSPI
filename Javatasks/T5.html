@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 5</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to find the Simple Interest using the formula: si = (p * r * t) / 100.</p>
+        <code id="code-block">
+import java.util.*;
+
+public class T5 {
+    public static void main(String[] args) {
+        double p, r, t, si;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the Profit : ");
+        p = sc.nextDouble();
+
+        System.out.print("Enter the Rate : ");
+        r = sc.nextDouble();
+
+        System.out.print("Enter the time : ");
+        t = sc.nextDouble();
+
+        si = (p * r * t) / 100;
+
+        System.out.println("So the Simple Interest is : " + si);
+    }
+}
+        </code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br>
+            Enter the Profit: 1000<br>
+            Enter the Rate: 5<br>
+            Enter the time: 2<br><br>
+            Output:<br>
+            So the Simple Interest is: 100.0
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
