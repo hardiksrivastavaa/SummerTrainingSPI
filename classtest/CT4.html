@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Class Test - P4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP a Java Program to read roll no, name, and marks of three subjects and calculate the total, percentage, and division</p>
+        <code id="code-block">
+import java.util.*;
+
+class CT4 {
+public static void main(String[] args) {
+            
+String n;
+int rol;
+int hm, mm, sm;
+            
+int t;
+double p;
+            
+Scanner sc = new Scanner(System.in);
+            
+System.out.print("Enter your name : ");
+n = sc.nextLine();
+            
+System.out.print("Enter your Roll Number : ");
+rol = sc.nextInt();
+            
+System.out.print("Enter your Hindi Marks : ");
+hm = sc.nextInt();
+            
+System.out.print("Enter your Maths Marks : ");
+mm = sc.nextInt();
+            
+System.out.print("Enter your Science Marks : ");
+sm = sc.nextInt();
+            
+t = hm + mm + sm;
+p = t / 3;
+            
+System.out.println(n + " your Total Marks is : " + t);
+System.out.println(n + " your Percentage is : " + p + "%");
+            
+if (p > 60) {
+System.out.print(n + " you got First division.");
+} else if (p < 60 && p >= 45) {
+System.out.print(n + " you got Second division.");
+} else {
+System.out.print(n + " you got Third division. Work Hard!!");
+}
+            
+            
+}
+}
+    </code>
+            
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br><br>
+            Enter your name: Hardik Srivastava<br>
+            Enter your Roll Number: 123<br>
+            Enter your Hindi Marks: 75<br>
+            Enter your Maths Marks: 85<br>
+            Enter your Science Marks: 65<br>
+            Hardik Srivastava your Total Marks is: 225<br>
+            Hardik Srivastava your Percentage is: 75.0%<br>
+            Hardik Srivastava you got First division.<br>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

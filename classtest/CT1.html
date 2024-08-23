@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Class Test - P1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>WAP to print the element of an array present on even position and odd position</p>
+        <code id="code-block">
+import java.util.*;
+class CT1 {
+public static void main(String[] args) {
+                        
+int i;
+int[] arr = new int[10];
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter 10 Numbers : ");
+for(i = 0; i < arr.length; i++) {
+arr[i] = sc.nextInt();
+}
+                            
+System.out.println("Here are the elements present of the Even and Odd Position");
+                            
+for (i = 0; i < arr.length; i += 2) {
+                            
+System.out.println(" Even Position (" + i + "th) index Elements of array : " + arr[i]);
+System.out.println("Odd Position (" + (i+1) + "th) index Elements of array : " + arr[i+1]);
+}
+                            
+}
+}
+    </code>
+            
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br><br>
+            Enter 10 Numbers : 1 2 3 4 5 6 7 8 9 10<br>
+            Here are the elements present on the Even and Odd Positions:<br>
+            Even Position (0th) index Elements of array : 1<br>
+            Odd Position (1st) index Elements of array : 2<br>
+            Even Position (2nd) index Elements of array : 3<br>
+            Odd Position (3rd) index Elements of array : 4<br>
+            Even Position (4th) index Elements of array : 5<br>
+            Odd Position (5th) index Elements of array : 6<br>
+            Even Position (6th) index Elements of array : 7<br>
+            Odd Position (7th) index Elements of array : 8<br>
+            Even Position (8th) index Elements of array : 9<br>
+            Odd Position (9th) index Elements of array : 10<br>
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
