@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7 - 21 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div>
+        <h2>Day 7 - 21 August, 2024</h2>
+
+        <div>
+            <p>Program 1: WAP to check if a given String is a Palindrome</p>
+            <code id="code-block-1">
+import java.util.*;
+
+class P23 {
+public static void main(String[] args) {
+String str, reversed = "";
+
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter your sentence : ");
+str = sc.nextLine();
+
+for (int i = str.length() - 1; i >= 0; --i) {
+reversed += str.charAt(i);
+}
+
+if(reversed.equalsIgnoreCase(str)) {
+System.out.print("Entered String is Palindrome.");
+} else {
+System.out.print("Entered String is not a Palindrome.");
+}
+}
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter your sentence: madam<br><br>
+                Output:<br>
+                Entered String is Palindrome.
+            </div>
+        </div>
+
+        <div>
+            <p>Program 2: WAP to find the sum of numbers using user-defined methods</p>
+            <code id="code-block-2">
+import java.util.*;
+
+class P24 {
+
+static int sum(int a, int b) {
+return (a + b);
+}
+
+public static void main(String[] args) {
+
+int a, b, r;
+Scanner sc = new Scanner(System.in);
+
+System.out.print("Enter the value of a : ");
+a = sc.nextInt();
+System.out.print("Enter the value of b : ");
+b = sc.nextInt();
+
+r = sum(a, b);
+System.out.print("Sum of a and b : " + r);
+
+    }
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-2')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter the value of a: 10<br>
+                Enter the value of b: 20<br><br>
+                Output:<br>
+                Sum of a and b: 30
+            </div>
+        </div>
+
+        <div>
+            <p>Program 3: WAP to find the area of a rectangle using a method</p>
+            <code id="code-block-3">
+import java.util.*;
+
+class P25 {
+public static void main(String[] args) {
+
+int x, y, a;
+
+Scanner sc = new Scanner(System.in);
+
+System.out.print("Enter the length of Rectangle : ");
+x = sc.nextInt();
+
+System.out.print("Enter the breadth of Rectangle : ");
+y = sc.nextInt();
+
+P25 p = new P25();
+a = p.area(x, y);
+
+System.out.print("Here is the area of Rectangle : " + a);
+
+}
+
+public int area(int l, int b) {
+return (l * b);
+}
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-3')"><i class="fas fa-copy"></i>Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter the length of Rectangle: 5<br>
+                Enter the breadth of Rectangle: 10<br><br>
+                Output:<br>
+                Here is the area of Rectangle: 50
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

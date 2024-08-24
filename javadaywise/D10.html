@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - 24 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h2>Day 10 - 24 August, 2024</h2>
+
+        <div>
+            <p>Program 28 : WAP to understand the concept of constructor</p>
+            <code id="code-block-1">
+class Student {
+int rollno; // instance variable
+String name;
+double fee;
+
+Student(int rollno, String name, double fee) {
+this.rollno = rollno;
+this.name = name;
+this.fee = fee;
+}
+    
+public void display() {
+System.out.println("Roll No.: " + rollno);
+System.out.println("Student Name: " + name);
+System.out.println("Fee: " + fee);
+}
+}
+
+class P28 {
+public static void main(String[] args) {
+Student s1 = new Student(1, "Hardik Srivastava", 4000);
+s1.display();
+Student s2 = new Student(2, "Sanskar Dubey", 6000);
+s2.display();
+}
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Output:<br>
+                Roll No.: 1<br>
+                Student Name: Hardik Srivastava<br>
+                Fee: 4000.0<br><br>
+                Roll No.: 2<br>
+                Student Name: Sanskar Dubey<br>
+                Fee: 6000.0
+            </div>
+        </div>
+
+        <div>
+            <p>Program 29 : WAP to create a program to understand the concept of Single Inheritance</p>
+            <code id="code-block-2">
+class Rundog {
+public void bark() {
+System.out.println("Sheru.............");
+System.out.println("Bhau....Bhau......");
+}
+}
+
+class Bulldog extends Rundog {
+public void growl() {
+System.out.println("Tuffy.............");
+System.out.println("gruu....gurr......");
+}
+}
+
+class P29 {
+public static void main(String[] args) {
+Bulldog d1 = new Bulldog();
+d1.growl();
+d1.bark();
+
+Rundog d2 = new Rundog();
+d2.bark();
+}
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-2')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Output:<br>
+                Tuffy.............<br>
+                gruu....gurr......<br><br>
+                Sheru.............<br>
+                Bhau....Bhau......<br><br>
+                Sheru.............<br>
+                Bhau....Bhau......
+            </div>
+        </div>
+
+        <div>
+            <p>Program 30 : WAP to create a program to understand the concept of Hierarchical Inheritance</p>
+            <code id="code-block-3">
+import java.util.*;
+
+class Shape {
+int s;
+public void setValue(int side) {
+s = side;
+}
+}
+
+class Square extends Shape {
+public int area() {
+return s * s;
+}
+}
+
+class Cube extends Shape {
+public int volume() {
+return s * s * s;
+}
+}
+
+class P30 {
+public static void main(String[] args) {
+int s, a, v;
+Scanner sc = new Scanner(System.in);
+
+Square sq = new Square();
+System.out.print("Enter Side of Square: ");
+s = sc.nextInt();
+sq.setValue(s);
+a = sq.area();
+System.out.println("Area of Square: " + a);
+
+Cube cu = new Cube();
+System.out.print("Enter Side of Cube: ");
+s = sc.nextInt();
+cu.setValue(s);
+v = cu.volume();
+System.out.print("Volume of Cube: " + v);
+    }
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-3')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Input:<br>
+                Enter Side of Square: 4<br>
+                Enter Side of Cube: 4<br><br>
+                Output:<br>
+                Area of Square: 16<br>
+                Volume of Cube: 64
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
