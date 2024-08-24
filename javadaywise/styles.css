@@ -28,7 +28,8 @@ code {
     padding: 20px;
     border-left: 6px solid #00796b;
     color: #333;
-    font-family: 'Courier New', Courier, monospace;
+//  font-family: 'Courier New', Courier, monospace;
+    font-family: monospace;
     white-space: pre-wrap;
     margin-top: 20px;
     margin-bottom: 20px;
