@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 18</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>
+            Write a Java program to create a class named "Bank." In the "Bank" class, take three instance variables
+            acno, name, and balance. Create a parameterized constructor to initialize instance variables. Now create the
+            following methods in the "Bank" class: <br> <br>
+
+            i. deposit() - This method is used to deposit money in the account. <br>
+            ii. withdraw() - This method is used to withdraw money from the account after checking the balance. <br>
+            iii. enquiry() - This method provides balance enquiry.
+        </p>
+        <code id="code-block">
+import java.util.*;
+
+class Bank {
+long acno;
+String name;
+int balance;
+            
+Bank(long ac, String n, int b) {
+acno = ac;
+name = n;
+balance = b;
+}
+            
+public void user() {
+System.out.println("-----------------------------------------------");
+System.out.println("\t  Dear " + name);
+System.out.println("\t Account Number : " + acno);
+System.out.println("\t Current Balance : " + balance);
+System.out.println("-----------------------------------------------");
+}
+            
+public void deposit(int md) {
+System.out.println(md + "Rs. has been deposited in your account!!");
+balance+=md;
+System.out.println("Now, Here's your Updated Balance : " + balance);
+System.out.println("-----------------------------------------------");
+}
+            
+public void withdraw(int wd) {
+if(wd <= balance) {
+System.out.println("Your withdraw amount " + wd + " Rs. has been given you!!");
+balance -=wd;
+System.out.println("-----------------------------------------------");
+} else {
+System.out.println("Your Balance is not Sufficient!!");
+System.out.println("Enter Less Ammount!");
+System.out.println("-----------------------------------------------");
+}
+}
+            
+public void enquiry() {
+System.out.println("Your Current Balance is : " + balance);
+System.out.println("-----------------------------------------------");
+            
+}
+}
+            
+class T18 {
+public static void main(String[] args) {
+int md, wd, choice;
+            
+Scanner sc = new Scanner(System.in);
+System.out.println("-----------------------------------------------");
+System.out.println("\t Welcome to State Bank of India");
+            
+Bank ac1 = new Bank(70211, "Hardik Srivastava", 55000);
+            
+ac1.user();
+System.out.println("\t Choose What you want to do \t");
+System.out.println("-----------------------------------------------");
+System.out.println("Enter 1 for : Deposit");
+System.out.println("Enter 2 for : Withdraw");
+System.out.println("Enter 3 for : Balance Enquiry");
+System.out.println("Enter 4 for : Logout");
+System.out.println("-----------------------------------------------");
+            
+int log=0;
+            
+while(log==0) {
+System.out.print("Enter your preferred Choice : ");
+choice = sc.nextInt();
+System.out.println("-----------------------------------------------");
+            
+switch(choice) {
+            
+case 1: 
+System.out.print("Enter Money to Deposit : ");
+md = sc.nextInt();
+ac1.deposit(md);
+System.out.println("\t    Do Other Operations");
+System.out.println("-----------------------------------------------");
+break;
+            
+case 2:
+System.out.print("Enter Money to Withdraw : ");
+wd = sc.nextInt();
+ac1.withdraw(wd);
+System.out.println("\t    Do Other Operations");
+System.out.println("-----------------------------------------------");
+break;
+            
+case 3:
+ac1.enquiry();
+System.out.println("\t    Do Other Operations");
+System.out.println("-----------------------------------------------");
+break;
+            
+case 4:
+System.out.println("You Successfully Logout!!!!");
+log++;
+System.out.println("-----------------------------------------------");
+break;
+            
+default:
+System.out.println("Enter Valid Choice between 1-4...");
+System.out.println("-----------------------------------------------");
+break;
+}
+            
+}
+}
+}
+</code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br><br>
+    -----------------------------------------------<br>
+            Welcome to State Bank of India<br>
+   -----------------------------------------------<br>
+            Dear Hardik Srivastava<br>
+            Account Number : 70211<br>
+            Current Balance : 55000<br>
+   -----------------------------------------------<br>
+            Choose What you want to do 	     <br>
+   -----------------------------------------------<br>
+   Enter 1 for : Deposit<br>
+   Enter 2 for : Withdraw<br>
+   Enter 3 for : Balance Enquiry<br>
+   Enter 4 for : Logout<br>
+   -----------------------------------------------<br>
+   Enter your preferred Choice : 1<br>
+   -----------------------------------------------<br>
+   Enter Money to Deposit : 5000<br>
+   5000 Rs. has been deposited in your account!!<br>
+   Now, Here's your Updated Balance : 60000<br>
+   -----------------------------------------------<br>
+            Do Other Operations<br>
+   -----------------------------------------------<br>
+   Enter your preferred Choice : 3<br>
+   -----------------------------------------------<br>
+   Your Current Balance is : 60000<br>
+   -----------------------------------------------<br>
+            Do Other Operations<br>
+   -----------------------------------------------<br>
+   Enter your preferred Choice : 2<br>
+   -----------------------------------------------<br>
+   Enter Money to Withdraw : 10000<br>
+   Your withdraw amount 10000 Rs. has been given you!!<br>
+   -----------------------------------------------<br>
+            Do Other Operations<br>
+   -----------------------------------------------<br>
+   Enter your preferred Choice : 3<br>
+   -----------------------------------------------<br>
+   Your Current Balance is : 50000<br>
+   -----------------------------------------------<br>
+            Do Other Operations<br>
+   -----------------------------------------------<br>
+   Enter your preferred Choice : 4<br>
+   -----------------------------------------------<br>
+   You Successfully Logout!!!!<br>
+   -----------------------------------------------<br>
+   
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Task - 17</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>Write a Java program to create a class named "Rectangle." 
+            In the "Rectangle" class, take two instance variables length and breadth. 
+            Now create a parameterized constructor to initialize variables and 
+            create a method area() which returns the area of the rectangle. 
+            Test the class "Rectangle."</p>
+        <code id="code-block">
+
+import java.util.*;
+
+class Rectangle{
+int length;
+int breadth;
+            
+            
+Rectangle(int l, int b) {
+length = l;
+breadth = b;
+} 
+            
+public int area() {
+return length*breadth;
+}
+            
+}
+            
+class T17 {
+public static void main(String[] args) {
+            
+int l, b, ar;
+Scanner sc = new Scanner(System.in);
+            
+System.out.println("-----------------------------------");
+            
+System.out.print("Enter the length of Rectangle : ");
+l = sc.nextInt();
+            
+System.out.print("Enter the breadth of Rectangle : ");
+b = sc.nextInt();
+            
+Rectangle r = new Rectangle(l, b);
+ar = r.area();
+            
+System.out.println("-----------------------------------");
+            
+System.out.println("Area of Rectangle : " + ar);
+            
+System.out.println("-----------------------------------");
+            
+}
+}
+
+</code>
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br><br>
+            ----------------------------------- <br>
+            Enter the length of Rectangle : 5 <br>
+            Enter the breadth of Rectangle : 3 <br>
+            ----------------------------------- <br>
+            Area of Rectangle : 15 <br>
+            ----------------------------------- <br>
+                    </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
