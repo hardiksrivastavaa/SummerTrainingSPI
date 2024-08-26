@@ -1,7 +1,6 @@
 # SummerInternshipSPI
 
 [![Live Demo](https://img.shields.io/badge/demo-live-green)](https://stspi24.vercel.app/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Table of Contents
 
