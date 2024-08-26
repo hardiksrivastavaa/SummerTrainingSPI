@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 - 26 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h2>Day 12 - 26 August, 2024</h2>
+
+        <div>
+            <p>Program 34 : WAP to create a program to understand the concept of Exception Handling</p>
+            <code id="code-block-1">
+
+import java.util.*;
+
+class P34 {
+public static void main(String[] args) {
+int x,y,z;
+                
+Scanner sc = new Scanner(System.in);
+                
+try {
+System.out.println("----------------------------");
+System.out.print("Enter the first Number : ");
+x = sc.nextInt();
+                
+System.out.print("Enter the Second Number : ");
+y = sc.nextInt();
+System.out.println("----------------------------");
+                
+z = x/y;
+                
+System.out.println("the Division is : " + z);
+System.out.println("----------------------------");
+} 
+                
+catch(ArithmeticException ex1) {
+System.out.println("Are you trying to / by zero?");
+System.out.println("the error is : " + ex1);
+System.out.println("----------------------------");
+                
+                
+}
+catch(InputMismatchException ex2) {
+System.out.println("Enter Numbers only.");
+System.out.println("the error is : " + ex2);
+System.out.println("----------------------------");
+}
+                
+finally {
+System.out.println("This is finally Block");
+System.out.println("----------------------------");
+}
+}
+}
+
+
+</code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output: Scenario 1: Division by Zero</strong><br>
+
+                ----------------------------<br>
+                Enter the first Number : 10<br>
+                Enter the Second Number : 0<br>
+                ----------------------------<br>
+                Are you trying to / by zero?<br>
+                the error is : java.lang.ArithmeticException: / by zero<br>
+                ----------------------------<br>
+                This is finally Block<br>
+                ---------------------------- <br>
+                <strong>Expected Output: Scenario 2: Invalid Input (Non-Integer)</strong><br>
+                ----------------------------<br>
+                Enter the first Number : 10<br>
+                Enter the Second Number : abc<br>
+                ----------------------------<br>
+                Enter Numbers only.<br>
+                the error is : java.util.InputMismatchException<br>
+                ----------------------------<br>
+                This is finally Block<br>
+                ----------------------------
+            </div>
+        </div>
+
+        <div>
+            <p>Program 34 : WAP to create a program to understand the concept of Exception Handling and Input through BufferedReader</p>
+            <code id="code-block-2">
+import java.io.*;
+
+ class P35 {
+public static void main(String[] args) throws IOException {
+                
+int empid;
+String empname;
+double salary;
+                
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                
+System.out.println("----------------------------");
+System.out.print("Enter Employee ID : ");
+empid = Integer.parseInt(br.readLine());
+                
+System.out.print("Enter Employee Name : ");
+empname = br.readLine();
+                
+System.out.print("Enter Employee Salary : ");
+salary = Double.parseDouble(br.readLine());
+System.out.println("----------------------------");
+                
+System.out.println("Employee Name : " + empname);
+System.out.println("Employee ID : " + empid);
+System.out.println("Employee Salary : " + salary);
+System.out.println("----------------------------");
+                
+}
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-2')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                ----------------------------<br>
+Enter Employee ID : 101<br>
+Enter Employee Name : Hardik Srivastava<br>
+Enter Employee Salary : 50000.75<br>
+----------------------------<br>
+Employee Name : John Doe<br>
+Employee ID : 101<br>
+Employee Salary : 50000.75<br>
+----------------------------
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

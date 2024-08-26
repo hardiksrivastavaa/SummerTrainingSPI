@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - 25 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <h2>Day 11 - 25 August, 2024</h2>
+
+        <div>
+            <p>Program 31 : WAP to create a program to understand the concept of MultiLevel Inheritance</p>
+            <code id="code-block-1">
+class A {
+public void showA() {
+System.out.println("This message from class A");
+}
+}
+                    
+class B extends A {
+public void showB() {
+System.out.println("This message from class B");
+}
+}
+                    
+class C extends B {
+public void showC() {
+System.out.println("This message from class C");
+}
+}
+                    
+class P31 {
+public static void main(String[] args) {
+                    
+A ob1 = new A();
+ob1.showA();
+                    
+System.out.println("-----------------------------------");
+                    
+B ob2 = new B();
+ob2.showA();
+ob2.showB();
+                    
+System.out.println("-----------------------------------");
+                    
+C ob3 = new C();
+ob3.showA();
+ob3.showB();
+ob3.showC();
+                    
+}
+}            
+</code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                This message from class A<br>
+                -----------------------------------<br>
+                This message from class A<br>
+                This message from class B<br>
+                -----------------------------------<br>
+                This message from class A<br>
+                This message from class B<br>
+                This message from class C                
+            </div>
+        </div>
+
+        <div>
+            <p>Program 32 : WAP to create a program to understand the concept of Method Overloading</p>
+            <code id="code-block-2">
+import java.util.*;
+                
+class Figure{
+                
+public int area(int s) {
+return s*s;
+}
+public int area(int l, int b) {
+return l*b;
+}
+}
+                
+class P32 {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+                
+int s, l, b, a1, a2;
+                
+System.out.print("Enter the side of square : ");
+s = sc.nextInt();
+                
+System.out.println("-----------------------------------");
+                
+Figure sq = new Figure();
+a1 = sq.area(s);
+System.out.println("Area of Square : " + a1);
+                
+System.out.println("-----------------------------------");
+                
+System.out.print("Enter the length of rectangle : ");
+l = sc.nextInt();
+System.out.print("Enter the breadth of rectangle : ");
+b = sc.nextInt();
+                
+System.out.println("-----------------------------------");
+                
+Figure ra = new Figure();
+a2 = ra.area(l, b);
+System.out.println("Area of Rectangle : " + a2);
+                
+System.out.println("-----------------------------------");
+                
+}
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-2')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                Enter the side of square : 4<br>
+                -----------------------------------<br>
+                Area of Square : 16<br>
+                -----------------------------------<br>
+                Enter the length of rectangle : 5<br>
+                Enter the breadth of rectangle : 3<br>
+                -----------------------------------<br>
+                Area of Rectangle : 15<br>
+                -----------------------------------
+            </div>
+        </div>
+
+        <div>
+            <p>Program 33 : WAP to create a program to understand the concept of Method Overriding</p>
+            <code id="code-block-3">
+import java.util.*;
+
+class X {
+                
+public void m1() {
+System.out.println("Class X's m1 Method Called!!");
+}
+public void m2() {
+System.out.println("Class X's m2 Method Called!!");
+}
+}
+                
+class Y extends X {
+                
+public void m1() {
+System.out.println("Class Y's m1 Method Called!!");
+}
+public void m3() {
+System.out.println("Class Y's m3 Method Called!!");
+}
+}
+                
+class P33 {
+public static void main(String[] args) {
+                
+System.out.println("-----------------------------------");
+                
+X ob1 = new X();
+ob1.m1();
+ob1.m2();
+                
+System.out.println("-----------------------------------");
+                
+Y ob2 = new Y();
+ob2.m1();
+ob2.m2();
+ob2.m3();
+                
+System.out.println("-----------------------------------");
+                
+}
+}
+            </code>
+            <a class="copy-btn" onclick="copyCode('code-block-3')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output:</strong><br>
+                -----------------------------------<br>
+                Class X's m1 Method Called!!<br>
+                Class X's m2 Method Called!!<br>
+                -----------------------------------<br>
+                Class Y's m1 Method Called!!<br>
+                Class X's m2 Method Called!!<br>
+                Class Y's m3 Method Called!!<br>
+                -----------------------------------                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
