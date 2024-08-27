@@ -22,167 +22,151 @@
             iii. enquiry() - This method provides balance enquiry.
         </p>
         <code id="code-block">
-import java.util.*;
+import java.io.*;
 
 class Bank {
-long acno;
+int accountno;
 String name;
-int balance;
+double balance;
             
-Bank(long ac, String n, int b) {
-acno = ac;
-name = n;
-balance = b;
+Bank(int accountno, String name, double balance) {
+this.accountno = accountno;
+this.name = name;
+this.balance = balance;
 }
             
-public void user() {
-System.out.println("-----------------------------------------------");
-System.out.println("\t  Dear " + name);
-System.out.println("\t Account Number : " + acno);
-System.out.println("\t Current Balance : " + balance);
-System.out.println("-----------------------------------------------");
-}
-            
-public void deposit(int md) {
-System.out.println(md + "Rs. has been deposited in your account!!");
-balance+=md;
-System.out.println("Now, Here's your Updated Balance : " + balance);
-System.out.println("-----------------------------------------------");
-}
-            
-public void withdraw(int wd) {
-if(wd <= balance) {
-System.out.println("Your withdraw amount " + wd + " Rs. has been given you!!");
-balance -=wd;
-System.out.println("-----------------------------------------------");
+public void deposit(int acno, double amt) {
+if (accountno == acno) {
+balance += amt;
+System.out.println("Amount : " + amt + " Rs. is credited in A/c : " + acno);
 } else {
-System.out.println("Your Balance is not Sufficient!!");
-System.out.println("Enter Less Ammount!");
-System.out.println("-----------------------------------------------");
+System.out.println("Account does not exist!!");
 }
 }
             
-public void enquiry() {
+public void withdraw(int acno, double amt) {
+if (accountno == acno) {
+if (amt <= balance) {
+balance -= amt;
+System.out.println("Amount : " + amt + " Rs. is debited from A/c : " + acno);
+} else {
+System.out.println("Enter less amount. Your balance is not sufficient!!");
+}
+} else {
+System.out.println("Account does not exist!!");
+}
+}
+            
+public void enquiry(int acno) {
+if (accountno == acno) {
 System.out.println("Your Current Balance is : " + balance);
-System.out.println("-----------------------------------------------");
-            
+} else {
+System.out.println("Account does not exist!!");
+}
 }
 }
             
 class T18 {
-public static void main(String[] args) {
-int md, wd, choice;
+public static void main(String[] args) throws IOException {
+nt acno, ch = 0;
+double bal, amt;
+String name;
             
-Scanner sc = new Scanner(System.in);
-System.out.println("-----------------------------------------------");
-System.out.println("\t Welcome to State Bank of India");
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
             
-Bank ac1 = new Bank(70211, "Hardik Srivastava", 55000);
+System.out.print("Enter Account Number : ");
+acno = Integer.parseInt(br.readLine());
             
-ac1.user();
-System.out.println("\t Choose What you want to do \t");
-System.out.println("-----------------------------------------------");
-System.out.println("Enter 1 for : Deposit");
-System.out.println("Enter 2 for : Withdraw");
-System.out.println("Enter 3 for : Balance Enquiry");
-System.out.println("Enter 4 for : Logout");
-System.out.println("-----------------------------------------------");
+System.out.print("Enter Account Holder Name : ");
+name = br.readLine();
+
+System.out.print("Enter Initial Balance : ");
+bal = Double.parseDouble(br.readLine());
             
-int log=0;
+Bank u1 = new Bank(acno, name, bal);
+System.out.println("Congrats!! Your Account is created.");
             
-while(log==0) {
-System.out.print("Enter your preferred Choice : ");
-choice = sc.nextInt();
-System.out.println("-----------------------------------------------");
+while (ch != 4) {
+System.out.println("Enter 1 for Deposit.");
+System.out.println("Enter 2 for Withdraw.");
+System.out.println("Enter 3 for Enquiry.");
+System.out.println("Enter 4 for Exit.");
             
-switch(choice) {
+System.out.print("Enter your choice : ");
+ch = Integer.parseInt(br.readLine());
             
-case 1: 
-System.out.print("Enter Money to Deposit : ");
-md = sc.nextInt();
-ac1.deposit(md);
-System.out.println("\t    Do Other Operations");
-System.out.println("-----------------------------------------------");
+switch (ch) {
+case 1:
+System.out.print("Enter Account No. : ");
+acno = Integer.parseInt(br.readLine());
+System.out.print("Enter Amount to deposit : ");
+amt = Double.parseDouble(br.readLine());
+u1.deposit(acno, amt);
 break;
             
 case 2:
-System.out.print("Enter Money to Withdraw : ");
-wd = sc.nextInt();
-ac1.withdraw(wd);
-System.out.println("\t    Do Other Operations");
-System.out.println("-----------------------------------------------");
+System.out.print("Enter Account No. : ");
+acno = Integer.parseInt(br.readLine());
+System.out.print("Enter Amount to Withdraw : ");
+amt = Double.parseDouble(br.readLine());
+u1.withdraw(acno, amt);
 break;
             
 case 3:
-ac1.enquiry();
-System.out.println("\t    Do Other Operations");
-System.out.println("-----------------------------------------------");
+System.out.print("Enter Account No. : ");
+acno = Integer.parseInt(br.readLine());
+u1.enquiry(acno);
 break;
             
 case 4:
-System.out.println("You Successfully Logout!!!!");
-log++;
-System.out.println("-----------------------------------------------");
 break;
             
 default:
-System.out.println("Enter Valid Choice between 1-4...");
-System.out.println("-----------------------------------------------");
+System.out.println("Enter Valid Choice!!");
 break;
-}
             
 }
 }
 }
+}
+            
+            
 </code>
         <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
         <div class="output">
             <strong>Expected Output:</strong><br><br>
-    -----------------------------------------------<br>
-            Welcome to State Bank of India<br>
-   -----------------------------------------------<br>
-            Dear Hardik Srivastava<br>
-            Account Number : 70211<br>
-            Current Balance : 55000<br>
-   -----------------------------------------------<br>
-            Choose What you want to do 	     <br>
-   -----------------------------------------------<br>
-   Enter 1 for : Deposit<br>
-   Enter 2 for : Withdraw<br>
-   Enter 3 for : Balance Enquiry<br>
-   Enter 4 for : Logout<br>
-   -----------------------------------------------<br>
-   Enter your preferred Choice : 1<br>
-   -----------------------------------------------<br>
-   Enter Money to Deposit : 5000<br>
-   5000 Rs. has been deposited in your account!!<br>
-   Now, Here's your Updated Balance : 60000<br>
-   -----------------------------------------------<br>
-            Do Other Operations<br>
-   -----------------------------------------------<br>
-   Enter your preferred Choice : 3<br>
-   -----------------------------------------------<br>
-   Your Current Balance is : 60000<br>
-   -----------------------------------------------<br>
-            Do Other Operations<br>
-   -----------------------------------------------<br>
-   Enter your preferred Choice : 2<br>
-   -----------------------------------------------<br>
-   Enter Money to Withdraw : 10000<br>
-   Your withdraw amount 10000 Rs. has been given you!!<br>
-   -----------------------------------------------<br>
-            Do Other Operations<br>
-   -----------------------------------------------<br>
-   Enter your preferred Choice : 3<br>
-   -----------------------------------------------<br>
-   Your Current Balance is : 50000<br>
-   -----------------------------------------------<br>
-            Do Other Operations<br>
-   -----------------------------------------------<br>
-   Enter your preferred Choice : 4<br>
-   -----------------------------------------------<br>
-   You Successfully Logout!!!!<br>
-   -----------------------------------------------<br>
+            Enter Account Number : 12345<br>
+            Enter Account Holder Name : John Doe<br>
+            Enter Initial Balance : 1000<br>
+            Congrats!! Your Account is created.<br>
+            Enter 1 for Deposit.<br>
+            Enter 2 for Withdraw.<br>
+            Enter 3 for Enquiry.<br>
+            Enter 4 for Exit.<br>
+            Enter your choice : 1<br>
+            Enter Account No. : 12345<br>
+            Enter Amount to deposit : 500<br>
+            Amount : 500 Rs. is credited in A/c : 12345<br>
+            Enter 1 for Deposit.<br>
+            Enter 2 for Withdraw.<br>
+            Enter 3 for Enquiry.<br>
+            Enter 4 for Exit.<br>
+            Enter your choice : 2<br>
+            Enter Account No. : 12345<br>
+            Enter Amount to Withdraw : 200<br>
+            Amount : 200 Rs. is debited from A/c : 12345<br>
+            Enter 1 for Deposit.<br>
+            Enter 2 for Withdraw.<br>
+            Enter 3 for Enquiry.<br>
+            Enter 4 for Exit.<br>
+            Enter your choice : 3<br>
+            Enter Account No. : 12345<br>
+            Your Current Balance is : 1300<br>
+            Enter 1 for Deposit.<br>
+            Enter 2 for Withdraw.<br>
+            Enter 3 for Enquiry.<br>
+            Enter 4 for Exit.<br>
+            Enter your choice : 4<br>            
    
         </div>
     </div>
