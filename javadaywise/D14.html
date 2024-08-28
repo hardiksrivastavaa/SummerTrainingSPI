@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 14 - 28 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h2>Day 14 - 28 August, 2024</h2>
+
+        <div>
+            <p>Program 34 : WAP to understand concept of interface in java</p>
+            <code id="code-block-1">
+interface MyInterface {
+void m1(); // public abstract void m1();
+void m2(); // public abstract void m2();
+}
+                    
+class TestInterface implements MyInterface {
+public void m1 () {
+System.out.println("This message from m1 method...");
+}
+public void m2 () {
+ System.out.println("This message from m2 method...");
+    
+}
+                    
+class P36 {
+public static void main(String[] args) {
+                    
+                    
+TestInterface ti = new TestInterface();
+                    
+ti.m1();
+ti.m2();
+                    
+
+
+</code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output: Scenario 1: Division by Zero</strong><br>
+                This message from m1 method... <br>
+                This message from m2 method...
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
