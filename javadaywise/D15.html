@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 15 - 29 August, 2024</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div>
+        <h2>Day 15 - 29 August, 2024</h2>
+
+        <div>
+            <p>Program 37 : WAP to explain the implementation of interfaces and abstract classes</p>
+            <code id="code-block-1">
+// First Meeting
+
+interface School {
+void registration();
+void feeSubmission();
+void batchAllotment();
+}
+                
+// Second Meeting
+                
+abstract class Test1 implements School {
+public void registration() {
+System.out.println("Business Logic of registration");
+}
+}
+                
+// Third Meeting
+                
+abstract class Test2 extends Test1  {
+public void feeSubmission() {
+System.out.println("Business Logic of Fee Submission");
+}
+}
+                
+// Fourth Meeting
+                
+class Test3 extends Test2 {
+public void batchAllotment() {
+System.out.println("Business Logic of batch Allotment");
+}
+}
+                
+class P37 {
+public static void main(String[] args) {
+
+Test3 t = new Test3();
+t.registration();
+t.feeSubmission();
+t.batchAllotment();
+
+}
+}
+
+
+</code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i> Copy Code</a>
+            <div class="output">
+                <strong>Expected Output: </strong><br>
+                Business Logic of registration <br>
+                Business Logic of Fee Submission <br>
+                Business Logic of batch Allotment
+
+            </div>
+        </div>
+        <div>
+            <p>Program 38 : WAP to use the package created by yourself</p>
+            <code id="code-block-1">
+package mypack;
+                
+public class Calct {
+                                
+public int add(int x, int y) {
+return (x + y);
+}
+                                
+public int greatest(int x, int y) {
+return x > y ? x : y;
+}
+}
+</code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i> Copy Code</a>
+
+
+            <code id="code-block-1">
+import java.util.Scanner;
+import mypack.Calct;
+                
+class P38 {
+                
+public static void main(String[] args) {
+                
+int a, b, s, g;
+                
+Scanner sc = new Scanner(System.in);
+Calct ob = new Calct();
+                
+System.out.println("----------------------");
+System.out.print("Enter value of a : ");
+a = sc.nextInt();
+                
+System.out.print("Enter value of b : ");
+b = sc.nextInt();
+System.out.println("----------------------");
+                
+s = ob.add(a, b);
+g = ob.greatest(a, b);
+                
+System.out.println("the addition is : " + s);
+System.out.println("the greatest is : " + g);
+System.out.println("----------------------");
+}
+}
+</code>
+            <a class="copy-btn" onclick="copyCode('code-block-1')"><i class="fas fa-copy"></i> Copy Code</a>
+
+
+            <div class="output">
+                ---------------------- <br>
+                Enter value of a : 5 <br>
+                Enter value of b : 3 <br>
+                ---------------------- <br>
+                The addition is : 8 <br>
+                The greatest is : 5 <br>
+                ----------------------
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
