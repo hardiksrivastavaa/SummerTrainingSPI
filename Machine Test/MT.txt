@@ -1,0 +1,20 @@
+P1 : Write a Java Program to find greatest number in three unequal numbers.
+
+P2 : Write a Java Program to convert binary to decimal.
+
+P3 : Write a Java Program to check given number is prime or not. 
+
+P4 : Write a Java Program to create an array of ten numbers by user input. now search a number in array 
+
+P5 : Write a Java Program to find given number is palindrome or not. 
+
+P6 : Write a Java Program to find volume of cuboid using user defined method. 
+
+P7 : Write a Java program with a `Rectangle` class. Include constructor and an `area()` method that returns the area of the rectangle. Create an instance of the class, take user input for length and breadth, and calculate the area using the method.
+
+P8 : Write a Java program to handle `InputMismatchException` and `ArithmeticException` during the division of two numbers using exception handling.
+
+P9 : Write a java program to take a sentence as input. Now count number of words in sentence. 
+
+P10 : Write a Java Program to print table of given number. 
+
