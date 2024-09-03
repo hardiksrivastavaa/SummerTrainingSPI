@@ -1,4 +1,4 @@
-# SummerInternshipSPI
+# SummerTrainingSPI
 
 [![Live Demo](https://img.shields.io/badge/demo-live-green)](https://stspi24.vercel.app/)
 
