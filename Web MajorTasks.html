@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Tasks - Web Tech</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 8px 8px 0 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #555;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="text-4xl mb-3 font-bold text-gray-900">Web Tech <br />Major Tasks</h1>
+            <p class="text-lg text-gray-900">From Jul 28, 2024 to Sep 15, 2024</p>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="index.html">Back to Home</a>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="day-1" class="cards">
+
+                <div class="card">
+                    <h3>Task 1</h3>
+                    <p>5 Page Website</p>
+                    <a href="https://raw.githubusercontent.com/hardiksrivastavaa/SummerInternshipSPI/main/Web MajorTasks/5 Page Website/index.html">View Code</a>
+                    <a href="Web MajorTasks/5 Page Website/index.html">View Output</a>
+                </div>
+
+                <div class="card">
+                    <h3>Task 2</h3>
+                    <p>IIMM Ayodhya UI - <a href="https://iimmayodhya.org/">Visit</a></p>
+                    <a href="https://raw.githubusercontent.com/hardiksrivastavaa/SummerInternshipSPI/main/Web MajorTasks//IIMM Ayodhya/index.html">View Code</a>
+                    <a href="Web MajorTasks/IIMM Ayodhya/index.html">View Output</a>
+                </div>
+
+            </section>
+        </div>
+    </main>
+  <!-- Footer with Icons -->
+    <footer class="footer mt-8">
+        <div class="text-center mt-4">
+            &copy; 2024 Hardik Srivastava. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
