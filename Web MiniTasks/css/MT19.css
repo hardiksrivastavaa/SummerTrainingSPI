@@ -1,0 +1,125 @@
+#outer {
+    height: 1000px;
+    width: 1320px;
+    /* Updated width to 1330px */
+    margin: 0 auto;
+    background-color: lightgrey;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c1 {
+    height: 980px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Ensure the images cover the box area */
+    margin: 5px;
+    /* 10px gap overall (5px on each side) */
+}
+
+.box1 {
+    background-image: url(../img/T19/1.jpg);
+    height: 400px;
+    width: calc(100% - 10px);
+    /* Adjust width to account for margin */
+}
+
+.c1_c2 {
+    display: flex;
+    height: 580px;
+    justify-content: space-between;
+}
+
+.c1_c2_c1,
+.c1_c2_c2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(48% - 10px);
+    /* Adjusted for margin */
+}
+
+.box2,
+.box3,
+.box4,
+.box5 {
+    width: calc(100% - 10px);
+    /* Adjust width to account for margin */
+}
+
+.box2 {
+    background-image: url(../img/T19/2.jpg);
+    height: 250px;
+}
+
+.box3 {
+    background-image: url(../img/T19/3.jpg);
+    height: 310px;
+}
+
+.box4 {
+    background-image: url(../img/T19/4.jpg);
+    height: 310px;
+}
+
+.box5 {
+    background-image: url(../img/T19/5.jpg);
+    height: 250px;
+}
+
+.c2,
+.c3 {
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box6,
+.box7,
+.box8,
+.box9,
+.box10,
+.box11 {
+    width: calc(100% - 10px);
+    /* Adjust width to account for margin */
+}
+
+.box6 {
+    background-image: url(../img/T19/6.jpg);
+    height: 200px;
+}
+
+.box7 {
+    background-image: url(../img/T19/7.jpg);
+    height: 200px;
+}
+
+.box8 {
+    background-image: url(../img/T19/8.jpg);
+    height: 600px;
+}
+
+.box9 {
+    background-image: url(../img/T19/9.jpg);
+    height: 600px;
+}
+
+.box10 {
+    background-image: url(../img/T19/10.jpg);
+    height: 250px;
+}
+
+.box11 {
+    background-image: url(../img/T19/11.jpg);
+    height: 150px;
+}
