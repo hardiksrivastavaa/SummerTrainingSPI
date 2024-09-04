@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIMM - Login</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- header start -->
+z        <div class="row bg-primary text-light py-2 text-center fw-semibold">
+            <div class="col-sm-6">Welcome to IIMM AYODHYA </div>
+            <div class="col-sm-6">HOME | IIMM BRANCHES | AICTE CORNER</div>
+        </div>
+
+        <!-- header end -->
+
+        <!-- main header start -->
+        <div class="row py-1 align-items-center ">
+            <div class="col-sm-2 mt-2 text-end">
+                <img src="img/logo.png" alt="logo" height="110">
+            </div>
+            <div class="col-sm-3 text-center mt-4">
+                <h1>IIMM, Ayodhya</h1>
+                <h6>Indian Institute of Materials Management</h6>
+            </div>
+            <div class="col-sm-2 mt-4">
+                <img src="img/g20.png" alt="logo" height="70">
+            </div>
+            <div class="col-sm-2 mt-4">
+                <button class="btn border-dark"> <i class="fa-solid fa-award"></i> An Institute Eminence </button>
+            </div>
+            <div class="col-sm-3 mt-4">
+                <span class="fw-semibold">
+                    Call Us:+91 9918258864
+                </span><br>
+                <span class="fw-semibold"> Mail Us: hardikfgp@gmail.com </span>
+            </div>
+
+        </div>
+        <!-- main header end -->
+
+        <!-- navbar start -->
+        <div class="row ">
+            <div class="col-sm-12 p-0">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid bg-primary py-2">
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 ">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page" href="index.html">Home
+                                        |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="#">This Institute |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="#">Education |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="#">Events |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="#">Knowledge Bank |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="aboutus.html">About Us |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="register.html">Register |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="login.html">Login |</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" href="contactus.html">Contact Us</a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- navbar end  -->
+
+        <!-- login start -->
+        <div class="row mt-5">
+            <div class="col-sm-9 mx-auto border border-2 border-primary rounded rounded-3 shadow">
+                <div class="row">
+                    <h1 class="text-center text-primary mt-4">Login Here</h1>
+                    <div class="col-sm-6">
+                        <img src="img/login.jpg" alt="login" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6 ">
+                        <form class="row h-100 align-items-center">
+                            <div>
+                                <div class="col-12">
+                                    <label for="userid" class="form-label">Select User Type</label>
+                                    <select name="" id="userid" class="form-select py-3">
+                                        <option value="">---Select User Type---</option>
+                                        <option value="">Admin</option>
+                                        <option value="">Student</option>
+                                        <option value="">Teacher</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="col-12 mt-4">
+                                    <label for="userid" class="form-label">Enter User Id </label>
+                                    <input type="email" class="form-control py-3" id="userid">
+                                </div>
+                                <div class="col-12 mt-4">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control py-3" id="password">
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary py-2 px-5"> Login</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <hr class="mt- mb-0 border-secondary-subtle">
+                                    <div class="d-flex gap-2 gap-md-4  justify-content-md-end">
+                                        <a href="register.html" class="link-primary text-decoration-none">Create new account</a>
+
+                                        <a href="login.html" class="link-primary text-decoration-none">Forgot password</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!-- login end -->
+
+
+    <!-- fg -->
+    <div class="row bg-primary py-5 mt-5 text-light">
+        <div class="col-sm-10 mx-auto">
+          <div class="row ">
+            <div class="col-sm-4 p-3">
+              <h4><i class="fa-solid fa-location-dot fs-1"></i> &nbsp;&nbsp;Find Us:</h4>
+              <p class="ms-4">Dev Nagar Colony, Raibareli Road
+                <br>(Near Naveen Galla Mandi), Ayodhya <br>(Faizabad) -224001
+              </p>
+            </div>
+            <div class="col-sm-4 p-3 ">
+              <h4><i class="fa-solid fa-phone"></i> Call Us: <h6>+91 94150 25623
+                  <br> +91 94157 80361
+                </h6>
+              </h4>
+            </div>
+            <div class="col-sm-4 p-3">
+              <h4><i class="fa-regular fa-envelope-open"></i> Mail Us
+                <h6>info@iimmayodhya.org<br>
+                  iimmayodhya@gmail.com</h6>
+              </h4>
+            </div>
+          </div>
+          <hr class="text-black" />
+          <div class="row">
+            <div class="col-sm-4">
+              <h2>Welcome To IIMM</h2>
+              <hr />
+              <p class="text">
+                <small>
+                  IIMM is dedicated to the promotion of the profession of Materials Management
+                  and with its multifarious activities, including EDP, seminars, workshops,
+                  in-house training programs and consultancy assignment.
+                  <h2>Follow us</h2>
+                </small>
+              </p>
+              <h2> <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter px-3"></i>
+                <i class="fa-brands fa-google-plus-g PX-3 "></i>
+              </h2>
+              </small>
+              </p>
+            </div>
+            <div class="col-sm-4">
+              <div class="col-sm-8 mt-4 mx-6 text-white">
+                <h4>Useful Links</h4>
+                <div class="row">
+                  <div class="col-sm-6 text-white">
+                    <p><a href="index.html" style="color: white; text-decoration: none;">Home</a></p>
+                    <p><a href="aboutus.html" style="color: white; text-decoration: none;">About Us</a></p>
+                    <p><a href="contactus.html" style="color: white; text-decoration: none;">Contact Us</a></p>
+                    <p><a href="aboutus.html" style="color: white; text-decoration: none;">About Us</a></p>
+                    <p><a href="contactus.html" style="color: white; text-decoration: none;">Contact Us</a></p>
+                  </div>
+                  <div class="col-sm-6 text-white">
+                    <p><a href="index.html" style="color: white; text-decoration: none;">Home</a></p>
+                    <p><a href="aboutus.html" style="color: white; text-decoration: none;">About Us</a></p>
+                    <p><a href="contactus.html" style="color: white; text-decoration: none;">Contact Us</a></p>
+                    <p><a href="aboutus.html" style="color: white; text-decoration: none;">About Us</a></p>
+                    <p><a href="contactus.html" style="color: white; text-decoration: none;">Contact Us</a></p>
+  
+                  </div>
+                </div>
+                          
+              </div>
+            </div>
+            <div class="col-sm-4 ">
+              <h4>Subscribe</h4>
+              <p class="text">
+                <small>Don’t miss to subscribe to our new feeds, kindly fill the form below.</small>
+              </p>
+              <div class="position-relative">
+                <input type="text" class="form-control position-absolute py-3" />
+                <button class="btn btn-danger position-absolute end-0 py-3 rounded-0 "><i
+                    class="fa-solid fa-paper-plane"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+                
+      </div>
+  
+      <!-- footer end  -->
+
+
+
+    </div>
+</body>
+
+</html>
