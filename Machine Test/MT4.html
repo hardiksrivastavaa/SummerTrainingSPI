@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Test - P4</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>Write a Java Program to create an array of 10 numbers by user input. now search a number in array.
+        </p>
+        <code id="code-block">
+
+import java.util.*;
+
+class MT4 {
+public static void main(String[] args) {
+
+int[] arr = new int[10];
+int i, n;
+boolean found = false;
+
+Scanner sc = new Scanner(System.in);
+System.out.print("Enter 10 Numbers : ");
+
+for (i = 0; i < arr.length; i++) {
+arr[i] = sc.nextInt();
+}
+
+System.out.println("Here is the array of 10 numbers : ");
+
+for (i = 0; i < arr.length; i++) {
+System.out.println(arr[i]);
+}
+
+System.out.print("Enter a number to search in array : ");
+n = sc.nextInt();
+
+for (i = 0; i < arr.length; i++) {
+if (arr[i] == n) {
+System.out.println(n + " is stored in array at the index of " + i);
+found = true;
+}
+}
+if (!found) {
+System.out.println("Given Number is not stored in array!!");
+}
+
+}
+}       
+    </code>
+            
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br><br>
+            Enter 10 Numbers : 5 12 7 3 8 10 14 2 6 9 <br>
+            Here is the array of 10 numbers :  <br>
+            5 <br>
+            12 <br>
+            7 <br>
+            3 <br>
+            8 <br>
+            10 <br>
+            14 <br>
+            2 <br>
+            6 <br>
+            9 <br>
+            Enter a number to search in array : 8 <br>
+            8 is stored in array at the index of 4        
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

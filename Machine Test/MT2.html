@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Test - P2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>Write a Java Program to convert binary to decimal.</p>
+        <code id="code-block">
+import java.util.Scanner;
+
+public class MT2 {
+public static void main(String[] args) {
+    
+Scanner scanner = new Scanner(System.in
+System.out.print("Enter a binary number: ");
+String binaryString = scanner.nextLine(
+int decimalValue = 0;
+int length = binaryString.length()
+for (int i = 0; i < length; i++) {
+char binaryChar = binaryString.charAt(i);
+int binaryDigit = binaryChar - '0';
+int power = length - 1 - i;
+decimalValue += binaryDigit * Math.pow(2, power);
+
+System.out.println("The decimal equivalent of binary " + binaryString + " is: " + decimalValue
+}
+}
+            
+            
+    </code>
+            
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br><br>
+            Enter a binary number: 1010 <br>
+            The decimal equivalent of binary 1010 is: 10
+            
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

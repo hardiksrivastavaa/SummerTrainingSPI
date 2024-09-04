@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Test - P6</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+    <div>
+        <p>Write a Java Program to find volume of cuboid using user defined method.</p>
+        <code id="code-block">
+
+import java.util.*;
+
+class MT6 {
+
+public int volume(int l, int b, int h) {
+return l * b * h;
+}
+
+public static void main(String[] args) {
+
+int l, b, h, v;
+
+Scanner sc = new Scanner(System.in);
+
+System.out.print("Enter length : ");
+l = sc.nextInt();
+
+System.out.print("Enter breadth : ");
+b = sc.nextInt();
+
+System.out.print("Enter height : ");
+h = sc.nextInt();
+
+MT6 vl = new MT6();
+v = vl.volume(l, b, h);
+
+System.out.println("The volume of cuboid is : " + v);
+
+}
+}
+                                
+    </code>
+            
+        <a class="copy-btn" onclick="copyCode()"><i class="fas fa-copy"></i>Copy Code</a>
+        <div class="output">
+            <strong>Expected Output:</strong><br><br>
+            Enter length : 7 <br>
+            Enter breadth : 4 <br>
+            Enter height : 6  <br>
+            The volume of cuboid is : 168
+            
+            
+            
+        </div>
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
